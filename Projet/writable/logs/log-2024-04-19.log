@@ -1,0 +1,144 @@
+CRITICAL - 2024-04-19 06:20:15 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:20:16 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:20:16 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:20:16 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:20:17 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:20:17 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:20:17 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:20:17 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:20:18 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:20:31 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:20:32 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:20:32 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 06:20:32 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:12:53 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala/mycv/name]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:13:20 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala/mycv]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-19 07:13:23 --> ArgumentCountError: Too few arguments to function App\Controllers\Peniala::displayCV(), 0 passed in /home/mit/Web/Codeigniter-4/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Peniala]
+in APPPATH/Controllers/Peniala.php on line 7.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Peniala->displayCV()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()

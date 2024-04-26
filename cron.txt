@@ -1,0 +1,8 @@
+## CRONTAB
+
+# Tache à executer sur un script toutes les 5 minutes dans /etc/crontab 
+# pour inserer et actualiser la base de donnée sur le log d'authentification
+ 
+*/5 *  * * *   root    /usr/bin/php /path/to/script/auth.php
+
+## CRONTAB
