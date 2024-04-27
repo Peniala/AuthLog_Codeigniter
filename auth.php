@@ -4,7 +4,7 @@
     $data=[];
     $i=0;
     
-    $flux=new mysqli("localhost","mit","123456","mit");
+    $flux=new mysqli("localhost","root","","mit");
     $query="select max(date) as max from session";
 
     $lastDate=mysqli_fetch_assoc($flux->query($query))['max'];
@@ -51,7 +51,7 @@
             //echo $year;
 	        //print_r($lastDate);	
             
-            if($data[$i]['date'] >= $lastDate){
+            if($data[$i]['date'] > $lastDate){
                 //print_r($data);
 		        $query="insert into session (date,hostname,process,type,user) values ('".$data[$i]['date']."','".$data[$i]['hostname']."','".$data[$i]['process']."','".$data[$i]['type']."','".$data[$i]['user']."')";
                 //echo $query."\n";

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form action="/">
+    <form action="/Auth">
         <input type="date" name="date" id="" <?php if(isset($date)) echo "value=\"".$date."\"" ?> >
         <input type="text" placeholder="Hostname" name="hostname" <?php if(isset($hostname)) echo "value=\"".$hostname."\"" ?>>
         <select name="type" id="" >
@@ -20,6 +20,7 @@
         <input type="text" placeholder="Process" name="process" <?php if(isset($process)) echo "value=\"".$process."\"" ?>>
         <input type="text" placeholder="User" name="user" <?php if(isset($user)) echo "value=\"".$user."\"" ?>>
         <button type="submit">Search</button>
+        <a href="Auth/actualize" class="actu"><button type="button">Actualize</button></a>
     </form>
         <?php if(isset($session) && is_array($session)): ?>
             <table>
