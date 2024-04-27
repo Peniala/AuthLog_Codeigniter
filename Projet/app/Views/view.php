@@ -22,6 +22,7 @@
         <button type="submit">Search</button>
         <a href="Auth/actualize" class="actu"><button type="button">Actualize</button></a>
     </form>
+    <h1>Auth.log file</h1>
         <?php if(isset($session) && is_array($session)): ?>
             <table>
                 <tr>
