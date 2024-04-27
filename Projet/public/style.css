@@ -18,6 +18,11 @@ form input, form select, form button{
 form .actu{
     width: 15%;
 }
+h1{
+    text-align: center;
+    margin: auto;
+    color: gray;
+}
 table{
     width: 80%;
     text-align: center;
