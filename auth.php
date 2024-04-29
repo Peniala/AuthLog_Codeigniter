@@ -4,7 +4,7 @@
     $data=[];
     $i=0;
     
-    $flux=new mysqli("localhost","root","","mit");
+    $flux=new mysqli("localhost","mit","123456","mit");
     $query="select max(date) as max from session";
 
     $lastDate=mysqli_fetch_assoc($flux->query($query))['max'];
