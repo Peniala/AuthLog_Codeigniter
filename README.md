@@ -15,3 +15,12 @@ Modification nécessaire :
 
 #Crontab
 - le chemin vers l'emplacement du script PHP;
+
+#Uniformisation de la syntaxe du fichier auth.log
+- ajout du template 10-mytemplate.conf dans /etc/rsyslog.d
+- réecriture de /etc/rsyslog.d/50-default.conf ou /etc/rsyslog.conf : 
+## auth,authpriv.*                 /var/log/auth.log;mytemplate
+- restarter le service rsyslog.service
+
+#Dépendances nécessaires
+#wkhtmltopdf
