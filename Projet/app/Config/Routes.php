@@ -8,6 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 
 //$routes->get('/','Home::index');
 $routes->get('/', 'Auth::index');
+$routes->get('/Connected', 'Auth::connected');
 // $routes->get('/', 'Inscription::search');
 // $routes->post('/', 'Inscription::search');
 // $routes->get('/Peniala', 'Peniala::displayCV');

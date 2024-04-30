@@ -31,10 +31,36 @@ class Auth extends BaseController
             'pager' => $auth->pager
         ];
 
-        return view('view.php',$session);
+        return view('view',$session);
     }
 
-    public function actualize(){
+    public function connected():string
+    {
+        $auth = new AuthLog();
+
+        $session = [];
+                    
+        $date = $this->request->getVar("date");
+        if($date === null) $date = date("Y-m-d");
+        $user = $this->request->getVar("user");
+        if($user === null) $user = "";
+
+        $session = [ 
+            'date' => $date,
+            'user' => $user,
+            'session' => $auth->getConnected($date)->paginate(10),
+            'pager' => $auth->getConnected($date)->pager
+        ];
+
+        for($i=0 ; $i<count($session["session"]) ; $i++)
+        {
+            $session["session"][$i]["status"] = "connected";
+        }
+
+        return view('connected',$session);
+    }
+
+    public function actualize($p){
 
         $all=fopen("/var/log/auth.log","r");
         $data=[];
@@ -65,6 +91,7 @@ class Auth extends BaseController
 
         while($line=fgets($all)){
             $year=date('Y',time());
+            $moisDate=date('m',time());
             if(strstr($line,"session closed") || strstr($line,"session opened")){
                 sscanf($line,"%[^ ] %[^ ] %[^ ] %[^ ] %[^:]: %*[^ ] session %[^ ] for user %[^\n]",$mois,$jour,$heure,$hostname,$process,$typeSession,$user);
                 if(strcmp($typeSession,"opened")==0){
@@ -92,7 +119,42 @@ class Auth extends BaseController
             }
         }
         fclose($all);
+        $page = $this->request->getVar("page");
+        if($page == null) $page = "Auth/";
 
-        return redirect()->to('Auth/');
+        if(isset($p)) return redirect()->to($page."?page=".$p);
+        else return redirect()->to($page);
+    }
+    public function export():string{
+	
+        //generation de l'html a exporter
+        
+        $start="<table>";
+        $end="</table>";	
+        
+        $width="table{width:90%;height:70%;cellpadding : 5px;}";
+        $css="<style>".file_get_contents("./style.css").$width."</style>";
+            
+        $str=$this->index();
+
+        $indStart=strpos($str,$start);
+        $indEnd=strpos($str,$end);	
+
+        $html=substr($str,$indStart,$indEnd-$indStart+strlen($end));
+
+        file_put_contents("./tmp.html",$html.$css);
+        
+        // //generation du pdf
+        
+        shell_exec("wkhtmltopdf http://projet.mit/tmp.html output.pdf");    
+
+        header("Content-Type: application/pdf");
+        header("Content-Disposition: attachment;filename=output.pdf");
+        header("Content-Length: ".filesize("output.pdf"));    
+    
+        readfile("output.pdf");
+
+         return $html.$css;
+        //return "";
     }
 }

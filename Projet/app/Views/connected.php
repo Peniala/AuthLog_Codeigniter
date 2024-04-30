@@ -1,54 +1,48 @@
-<?php
-	$hostname=(isset($_GET['hostname']))?$_GET['hostname']:null;
-	$date=(isset($_GET['date']))?$_GET['date']:null;
-	$type=(isset($_GET['type']))?$_GET['type']:null;
-	$process=(isset($_GET['process']))?$_GET['process']:null;
-	$user=(isset($_GET['user']))?$_GET['user']:null;
-	$page=(isset($_GET['page']))?$_GET['page']:null;
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Session</title>
+    <title>Connected</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <section class="center">
         <nav class="barre_nav">
-            <form action="/Auth">
+            <form action="/Connected">
                 <input type="date" name="date" id="" <?php if(isset($date)) echo "value=\"".$date."\"" ?> >
-                <input type="text" placeholder="Hostname" name="hostname" <?php if(isset($hostname)) echo "value=\"".$hostname."\"" ?>>
-                <select name="type" id="" >
-                    <option value="">Type</option>
-                    <option value="opened" <?php if(isset($type) && $type == "opened") echo "selected" ?>>Opened</option>
-                    <option value="closed" <?php if(isset($type) && $type == "closed") echo "selected" ?>>Closed</option>
+                <select name="level" id="" >
+                    <option value="">All</option>
+                    <option value="l1" <?php if(isset($type) && $type == "opened") echo "selected" ?>>L1</option>
+                    <option value="l2" <?php if(isset($type) && $type == "closed") echo "selected" ?>>L2</option>
+                    <option value="l3" <?php if(isset($type) && $type == "opened") echo "selected" ?>>L3</option>
+                    <option value="m1" <?php if(isset($type) && $type == "closed") echo "selected" ?>>M1</option>
+                    <option value="m2" <?php if(isset($type) && $type == "closed") echo "selected" ?>>M2</option>
                 </select>
                 <!-- <input type="checkbox" name="opened" id=""><label>Opened</label>
                 <input type="checkbox" name="closed" id=""><label>Closed</label> -->
-                <input type="text" placeholder="Process" name="process" <?php if(isset($process)) echo "value=\"".$process."\"" ?>>                <input type="text" placeholder="User" name="user" <?php if(isset($user)) echo "value=\"".$user."\"" ?>>
+                <input type="text" placeholder="User" name="user" <?php if(isset($user)) echo "value=\"".$user."\"" ?>>
+                
                 <button type="submit">Search</button>
-                <a href="Auth/actualize/<?php if(isset($_GET["page"])) echo $_GET["page"];?>" class="actu"><button type="button">Actualize</button></a>
+                <a href="Auth/actualize?page=Connected" class="actu"><button type="button">Actualize</button></a>
             </form>
         </nav>
-        <h1 class="title">Auth.log file</h1>
+        <h1 class="title">Connected on <?php echo $date ?></h1>
             <?php if(isset($session) && is_array($session)): ?>
                 <table>
                     <tr>
-                        <td>Id</td>
-                        <td>Date</td>
-                        <td>Hostname</td>
-                        <td>Process</td>
-                        <td>Type</td>
                         <td>User</td>
+                        <td>Level</td>
+                        <td>Status</td>
                     </tr>
                     <?php foreach($session as $index => $row): ?>
                                 <tr class="<?= ($index%2 != 0) ? "odd" : "even";?>">
                                     <?php foreach($row as $i => $col): 
-                                        if($i == 'date') echo "<td>".date('d-m-Y h:i:s',strtotime($col))."</td>";
-                                        else echo "<td>".$col."</td>";
-                                    endforeach ?>
+                                        // if($i == 'date') echo "<td>".date('d-m-Y h:i:s',strtotime($col))."</td>";
+                                        // else echo "<td>".$col."</td>";
+                                        echo "<td>".$col."</td>";
+                                    endforeach;
+                                    echo "<td></td>";?>
                                 </tr>
                     <?php endforeach ?>
                     
@@ -61,9 +55,9 @@
             <img src="./bars.png" alt="Bars" id="image">
         </div>
         <div class="list">
-            <a href="Auth/export?date=<?= $date;?>&hostname=<?= $hostname;?>&type=<?= $type;?>&process=<?= $process;?>&user=<?= $user;?>&page=<?= $page;?>" class="link link_pdf" target="_blank"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
-            <a href="Auth/" class="actived link">View session</a>
-            <a href="Connected" class="link">Dashboard</a>
+            <a href="" class="link link_pdf"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
+            <a href="Auth/" class="link">View session</a>
+            <a href="Connected" class="actived link">Dashboard</a>
         </div>
     </div>
     <script >
@@ -97,7 +91,7 @@
                 side_bar.style.backgroundColor = "#030838";
                 side_bar.style.width = "20%";
                 button_nav.style.backgroundColor = "#fff";
-                title.style.marginTop = "12%";
+                title.style.marginTop = "11%";
             }
             // alert('click');
         });
