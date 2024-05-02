@@ -1,12 +1,11 @@
 <table>
                     <tr>
-                        <td>Id</td>
-                        <td>Date</td>
-                        <td>Hostname</td>
-                        <td>Process</td>
-                        <td>Type</td>
                         <td>User</td>
+                        <td>Level</td>
+                        <td>Status</td>
                     </tr>
+                                                    <tr class="even">
+                                    <td>root</td><td>connected</td><td></td>                                </tr>
                                         
                 </table><style>*{
     margin: 0;
@@ -51,7 +50,7 @@ form .actu{
     position: fixed;
     right: 0;
     height: 100%;
-    transition: 0.5s;
+    transition: 1s;
 }
 .button_nav {
     border: 1px solid #161e69;
@@ -59,13 +58,15 @@ form .actu{
     padding: 1vh 0.5vw;
     border-radius: 50px;
     width: 3vw;
-    height: 5vh;
+    height: 6vh;
     display: block;
+    text-align: center;
 }
 .button_nav img{
-    width: 100%;
+    width: 90%;
     height: 100%;
     color: #040b47;
+    transition: 2s;
 }
 .list{
     display: none;
@@ -138,7 +139,6 @@ table .even{
     list-style: none;
     background-color: rgb(221, 221, 221);
     margin: 3vh auto;
-    width: 50%;
     border: 1px solid;
     border-radius: 50px;
 }
@@ -168,4 +168,4 @@ table .even{
     text-decoration: none;
     color: #000;
 }
-table{width:90%;height:70%;cellpadding : 5px;}</style>
+table{width:90%;height:auto;cellpadding : 5px;}</style>

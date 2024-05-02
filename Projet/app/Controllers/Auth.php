@@ -34,23 +34,26 @@ class Auth extends BaseController
         return view('view',$session);
     }
 
-    public function connected():string
+    public function connected($cond=0):string
     {
         $auth = new AuthLog();
-
+	
         $session = [];
-                    
         $date = $this->request->getVar("date");
         if($date === null) $date = date("Y-m-d");
         $user = $this->request->getVar("user");
         if($user === null) $user = "";
+        $page = $this->request->getVar("page");
+        if($page === null) $page = 1;
 
         $session = [ 
             'date' => $date,
             'user' => $user,
-            'session' => $auth->getConnected($date)->paginate(10),
-            'pager' => $auth->getConnected($date)->pager
-        ];
+            'page' => $page,
+            'session' => ($cond==0)?$auth->like('t.user',$user)->getConnected($date)->paginate(10):$auth->getConnected($date)->findAll(),
+            'pager' => $auth->getConnected($date)->pager,
+	    'cond' => $cond		
+	];
 
         for($i=0 ; $i<count($session["session"]) ; $i++)
         {
@@ -60,7 +63,13 @@ class Auth extends BaseController
         return view('connected',$session);
     }
 
-    public function actualize($p){
+    public function actualize(){
+        $h=(isset($_GET['hostname']))?$_GET['hostname']:null;
+        $d=(isset($_GET['date']))?$_GET['date']:null;
+        $t=(isset($_GET['type']))?$_GET['type']:null;
+        $pr=(isset($_GET['process']))?$_GET['process']:null;
+        $u=(isset($_GET['user']))?$_GET['user']:null;
+        $p=(isset($_GET['page']))?$_GET['page']:1;
 
         $all=fopen("/var/log/auth.log","r");
         $data=[];
@@ -87,6 +96,15 @@ class Auth extends BaseController
             'Okt'=>'10',
             'Nov'=>'11',
             'Dec'=>'12',
+            'Apr'=>'04',
+            'May'=>'05',
+            'Jun'=>'06',
+            'Jul'=>'07',
+            'Aug'=>'08',
+            'Sep'=>'09',
+            'Oct'=>'10',
+            'Nov'=>'11',
+            'Des'=>'12',
         );
 
         while($line=fgets($all)){
@@ -119,23 +137,23 @@ class Auth extends BaseController
             }
         }
         fclose($all);
-        $page = $this->request->getVar("page");
-        if($page == null) $page = "Auth/";
+        $page = $this->request->getVar("p");
+        if($page == null) $page = "Auth";
 
-        if(isset($p)) return redirect()->to($page."?page=".$p);
+        if(isset($page)) return redirect()->to($page."?date=".$d."&hostname=".$h."&type=".$t."&process=".$pr."&user=".$u."&page=".$p);
         else return redirect()->to($page);
     }
-    public function export():string{
+    public function export($cond):string{
 	
         //generation de l'html a exporter
         
         $start="<table>";
         $end="</table>";	
         
-        $width="table{width:90%;height:70%;cellpadding : 5px;}";
+        $width="table{width:90%;height:auto;cellpadding : 5px;}";
         $css="<style>".file_get_contents("./style.css").$width."</style>";
             
-        $str=$this->index();
+        $str=($cond==0)?$this->index():$this->connected(0);
 
         $indStart=strpos($str,$start);
         $indEnd=strpos($str,$end);	

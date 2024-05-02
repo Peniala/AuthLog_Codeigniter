@@ -29,7 +29,7 @@
                 <input type="checkbox" name="closed" id=""><label>Closed</label> -->
                 <input type="text" placeholder="Process" name="process" <?php if(isset($process)) echo "value=\"".$process."\"" ?>>                <input type="text" placeholder="User" name="user" <?php if(isset($user)) echo "value=\"".$user."\"" ?>>
                 <button type="submit">Search</button>
-                <a href="Auth/actualize/<?php if(isset($_GET["page"])) echo $_GET["page"];?>" class="actu"><button type="button">Actualize</button></a>
+                <a href="Auth/actualize?date=<?= $date;?>&hostname=<?= $hostname;?>&type=<?= $type;?>&process=<?= $process;?>&user=<?= $user;?>&page=<?= $page;?>" class="actu"><button type="button">Actualize</button></a>
             </form>
         </nav>
         <h1 class="title">Auth.log file</h1>
@@ -61,9 +61,9 @@
             <img src="./bars.png" alt="Bars" id="image">
         </div>
         <div class="list">
-            <a href="Auth/export?date=<?= $date;?>&hostname=<?= $hostname;?>&type=<?= $type;?>&process=<?= $process;?>&user=<?= $user;?>&page=<?= $page;?>" class="link link_pdf" target="_blank"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
-            <a href="Auth/" class="actived link">View session</a>
-            <a href="Connected" class="link">Dashboard</a>
+            <a href="Auth/export/0?date=<?= $date;?>&hostname=<?= $hostname;?>&type=<?= $type;?>&process=<?= $process;?>&user=<?= $user;?>&page=<?= $page;?>" class="link link_pdf" target="_blank"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
+            <a href="Auth" class="actived link">View session</a>
+            <a href="/Connected" class="link">Dashboard</a>
         </div>
     </div>
     <script >
@@ -102,9 +102,9 @@
             // alert('click');
         });
 
-        window.addEventListener("onscroll",()=>{
-
-        });
+        // window.addEventListener("scroll",()=>{
+        //     barre_nav.style.top = "-20%";
+        // });
 
     </script>
 </body>

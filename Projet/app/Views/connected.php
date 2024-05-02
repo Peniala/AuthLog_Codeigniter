@@ -24,7 +24,7 @@
                 <input type="text" placeholder="User" name="user" <?php if(isset($user)) echo "value=\"".$user."\"" ?>>
                 
                 <button type="submit">Search</button>
-                <a href="Auth/actualize?page=Connected" class="actu"><button type="button">Actualize</button></a>
+                <a href="/Auth/actualize?date=<?= $date;?>&user=<?= $user;?>&page=<?= $page;?>&p=/Connected" class="actu"><button type="button">Actualize</button></a>
             </form>
         </nav>
         <h1 class="title">Connected on <?php echo $date ?></h1>
@@ -47,7 +47,11 @@
                     <?php endforeach ?>
                     
                 </table>
-                <?= $pager->links() ?>
+                <?php 
+                    if($cond==0){
+                      echo  $pager->links(); 
+                    }
+                ?>
             <?php endif ?>
     </section>
     <div class="side_bar">
@@ -55,9 +59,9 @@
             <img src="./bars.png" alt="Bars" id="image">
         </div>
         <div class="list">
-            <a href="" class="link link_pdf"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
-            <a href="Auth/" class="link">View session</a>
-            <a href="Connected" class="actived link">Dashboard</a>
+            <a href="/Auth/export/1?date=<?= $date;?>&user=<?= $user;?>&page=<?= $page;?>" class="link link_pdf"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
+            <a href="/Auth" class="link">View session</a>
+            <a href="/Connected" class="actived link">Dashboard</a>
         </div>
     </div>
     <script >

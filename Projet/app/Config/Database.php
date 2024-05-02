@@ -27,9 +27,9 @@ class Database extends Config
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'localhost',
-        'username'     => 'mit',
+        'username'     => 'faneva',
 	'password'     => '123456',
-        'database'     => 'mit',
+        'database'     => 'project',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
