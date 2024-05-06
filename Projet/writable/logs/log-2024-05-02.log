@@ -1,0 +1,798 @@
+CRITICAL - 2024-05-02 05:02:22 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::actualize(), 0 passed in /home/mit/Web/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Auth/actualize]
+in APPPATH/Controllers/Auth.php on line 63.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->actualize()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 05:10:10 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::actualize(), 0 passed in /home/mit/Web/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Auth/actualize]
+in APPPATH/Controllers/Auth.php on line 63.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->actualize()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 05:12:36 --> ErrorException: Undefined array key "May"
+[Method: GET, Route: Auth/actualize]
+in APPPATH/Controllers/Auth.php on line 107.
+ 1 APPPATH/Controllers/Auth.php(107): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->actualize()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 05:56:34 --> ErrorException: Undefined variable $hostname
+[Method: GET, Route: Connected]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/mit/Web/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Auth.php(60): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 05:57:06 --> ErrorException: Undefined variable $type
+[Method: GET, Route: Connected]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/mit/Web/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Auth.php(60): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 05:57:19 --> ErrorException: Undefined variable $page
+[Method: GET, Route: Connected]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/mit/Web/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Auth.php(60): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:12:53 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::connected(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connected]
+in APPPATH/Controllers/Auth.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:16:14 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::connected(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connected]
+in APPPATH/Controllers/Auth.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:16:50 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::connected(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connected]
+in APPPATH/Controllers/Auth.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:17:24 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::connected(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connected]
+in APPPATH/Controllers/Auth.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:17:32 --> ErrorException: Undefined variable $date
+[Method: GET, Route: Connected/0]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/faneva/AuthLog_Codeigniter/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Connected.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connected->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:18:33 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::connected(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connected/]
+in APPPATH/Controllers/Auth.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:18:40 --> ErrorException: Undefined variable $date
+[Method: GET, Route: Connected/0]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/faneva/AuthLog_Codeigniter/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Connected.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connected->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:24:27 --> ErrorException: Undefined variable $date
+[Method: GET, Route: Connected/0]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/faneva/AuthLog_Codeigniter/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Connected.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connected->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:30:30 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::connected(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connected/]
+in APPPATH/Controllers/Auth.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:30:32 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::connected(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connected]
+in APPPATH/Controllers/Auth.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:30:39 --> ErrorException: Undefined variable $date
+[Method: GET, Route: Connected/0]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/faneva/AuthLog_Codeigniter/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Connected.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connected->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:30:48 --> ErrorException: Undefined variable $date
+[Method: GET, Route: Connected/0]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/faneva/AuthLog_Codeigniter/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Connected.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connected->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:43:54 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::connected(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connected/]
+in APPPATH/Controllers/Auth.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:43:58 --> ErrorException: Undefined variable $date
+[Method: GET, Route: Connected/0]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/faneva/AuthLog_Codeigniter/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Connected.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connected->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:45:27 --> ErrorException: Undefined variable $date
+[Method: GET, Route: Connected/0]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/faneva/AuthLog_Codeigniter/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Connected.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connected->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:47:11 --> ErrorException: Undefined variable $date
+[Method: GET, Route: Connected/0]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/faneva/AuthLog_Codeigniter/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Connected.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connected->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:47:21 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::connected(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connected]
+in APPPATH/Controllers/Auth.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:58:39 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::connected(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connected]
+in APPPATH/Controllers/Auth.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:58:56 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::connected(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connected]
+in APPPATH/Controllers/Auth.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:58:58 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::connected(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connected]
+in APPPATH/Controllers/Auth.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 07:59:02 --> ErrorException: Undefined variable $date
+[Method: GET, Route: Connected/0]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/faneva/AuthLog_Codeigniter/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Connected.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connected->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:02:25 --> ErrorException: Undefined variable $date
+[Method: GET, Route: Connected/0]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/faneva/AuthLog_Codeigniter/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Connected.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connected->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:02:26 --> ErrorException: Undefined variable $date
+[Method: GET, Route: Connected/0]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/faneva/AuthLog_Codeigniter/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Connected.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connected->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:03:02 --> ErrorException: Undefined variable $date
+[Method: GET, Route: Connected/0]
+in APPPATH/Views/connected.php on line 29.
+ 1 APPPATH/Views/connected.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/faneva/AuthLog_Codeigniter/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Connected.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connected->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:03:34 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::connected(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connected/]
+in APPPATH/Controllers/Auth.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:05:38 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::export(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 145.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:06:59 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::export(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 145.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:07:13 --> ErrorException: Undefined variable $date
+[Method: GET, Route: Connected/0]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/faneva/AuthLog_Codeigniter/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Connected.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connected->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:09:09 --> Error: Call to a member function links() on null
+[Method: GET, Route: Auth/connected/1]
+in APPPATH/Views/connected.php on line 50.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(62): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:13:08 --> Error: Call to a member function links() on null
+[Method: GET, Route: Auth/connected/style.css]
+in APPPATH/Views/connected.php on line 51.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(62): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:13:09 --> Error: Call to a member function links() on null
+[Method: GET, Route: Auth/connected/bars.png]
+in APPPATH/Views/connected.php on line 51.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(62): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:13:09 --> Error: Call to a member function links() on null
+[Method: GET, Route: Auth/connected/file-pdf.png]
+in APPPATH/Views/connected.php on line 51.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(62): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:13:31 --> Error: Call to a member function links() on null
+[Method: GET, Route: Auth/connected/1]
+in APPPATH/Views/connected.php on line 51.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(62): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:16:25 --> Error: Call to a member function links() on null
+[Method: GET, Route: Auth/connected/style.css]
+in APPPATH/Views/connected.php on line 52.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(63): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:16:26 --> Error: Call to a member function links() on null
+[Method: GET, Route: Auth/connected/file-pdf.png]
+in APPPATH/Views/connected.php on line 52.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(63): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:16:26 --> Error: Call to a member function links() on null
+[Method: GET, Route: Auth/connected/bars.png]
+in APPPATH/Views/connected.php on line 52.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(63): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:16:45 --> Error: Call to a member function links() on null
+[Method: GET, Route: Auth/connected/style.css]
+in APPPATH/Views/connected.php on line 52.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(63): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:16:46 --> Error: Call to a member function links() on null
+[Method: GET, Route: Auth/connected/file-pdf.png]
+in APPPATH/Views/connected.php on line 52.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(63): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:16:46 --> Error: Call to a member function links() on null
+[Method: GET, Route: Auth/connected/bars.png]
+in APPPATH/Views/connected.php on line 52.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(63): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:16:50 --> Error: Call to a member function links() on null
+[Method: GET, Route: Auth/connected/1]
+in APPPATH/Views/connected.php on line 52.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(63): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:23:56 --> ErrorException: Undefined variable $date
+[Method: GET, Route: Connected/0]
+in APPPATH/Views/connected.php on line 27.
+ 1 APPPATH/Views/connected.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/faneva/AuthLog_Codeigniter/Projet/app/Views/connected.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Connected.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Connected->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:24:55 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::connected(), 0 passed in /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Connected]
+in APPPATH/Controllers/Auth.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-05-02 08:49:45 --> mysqli_sql_exception: Column 'user' in where clause is ambiguous in /home/faneva/AuthLog_Codeigniter/Projet/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+#4 /home/faneva/AuthLog_Codeigniter/Projet/system/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/faneva/AuthLog_Codeigniter/Projet/system/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+#6 /home/faneva/AuthLog_Codeigniter/Projet/app/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+#7 /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php(933): App\Controllers\Auth->connected()
+#8 /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/faneva/AuthLog_Codeigniter/Projet/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 /home/faneva/AuthLog_Codeigniter/Projet/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/faneva/AuthLog_Codeigniter/Projet/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+CRITICAL - 2024-05-02 08:49:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'user' in where clause is ambiguous
+[Method: GET, Route: Connected]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 SYSTEMPATH/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+ 4 APPPATH/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:49:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'user' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 5 SYSTEMPATH/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+ 6 APPPATH/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:49:45 --> [Caused by] mysqli_sql_exception: Column 'user' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+ 7 APPPATH/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-05-02 08:50:56 --> mysqli_sql_exception: Column 'user' in where clause is ambiguous in /home/faneva/AuthLog_Codeigniter/Projet/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+#4 /home/faneva/AuthLog_Codeigniter/Projet/system/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/faneva/AuthLog_Codeigniter/Projet/system/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+#6 /home/faneva/AuthLog_Codeigniter/Projet/app/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+#7 /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php(933): App\Controllers\Auth->connected()
+#8 /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/faneva/AuthLog_Codeigniter/Projet/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 /home/faneva/AuthLog_Codeigniter/Projet/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/faneva/AuthLog_Codeigniter/Projet/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+CRITICAL - 2024-05-02 08:50:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'user' in where clause is ambiguous
+[Method: GET, Route: Connected]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 SYSTEMPATH/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+ 4 APPPATH/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:50:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'user' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 5 SYSTEMPATH/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+ 6 APPPATH/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:50:56 --> [Caused by] mysqli_sql_exception: Column 'user' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+ 7 APPPATH/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-05-02 08:50:58 --> mysqli_sql_exception: Column 'user' in where clause is ambiguous in /home/faneva/AuthLog_Codeigniter/Projet/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+#4 /home/faneva/AuthLog_Codeigniter/Projet/system/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/faneva/AuthLog_Codeigniter/Projet/system/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+#6 /home/faneva/AuthLog_Codeigniter/Projet/app/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+#7 /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php(933): App\Controllers\Auth->connected()
+#8 /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/faneva/AuthLog_Codeigniter/Projet/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 /home/faneva/AuthLog_Codeigniter/Projet/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/faneva/AuthLog_Codeigniter/Projet/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+CRITICAL - 2024-05-02 08:50:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'user' in where clause is ambiguous
+[Method: GET, Route: Connected]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 SYSTEMPATH/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+ 4 APPPATH/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:50:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'user' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 5 SYSTEMPATH/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+ 6 APPPATH/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:50:58 --> [Caused by] mysqli_sql_exception: Column 'user' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+ 7 APPPATH/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-05-02 08:51:02 --> mysqli_sql_exception: Column 'user' in where clause is ambiguous in /home/faneva/AuthLog_Codeigniter/Projet/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/faneva/AuthLog_Codeigniter/Projet/system/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+#4 /home/faneva/AuthLog_Codeigniter/Projet/system/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /home/faneva/AuthLog_Codeigniter/Projet/system/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+#6 /home/faneva/AuthLog_Codeigniter/Projet/app/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+#7 /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php(933): App\Controllers\Auth->connected()
+#8 /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/faneva/AuthLog_Codeigniter/Projet/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/faneva/AuthLog_Codeigniter/Projet/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 /home/faneva/AuthLog_Codeigniter/Projet/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/faneva/AuthLog_Codeigniter/Projet/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+CRITICAL - 2024-05-02 08:51:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'user' in where clause is ambiguous
+[Method: GET, Route: Connected]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 SYSTEMPATH/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+ 4 APPPATH/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:51:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'user' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 5 SYSTEMPATH/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+ 6 APPPATH/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-05-02 08:51:02 --> [Caused by] mysqli_sql_exception: Column 'user' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH/BaseModel.php(1284): CodeIgniter\Model->countAllResults()
+ 7 APPPATH/Controllers/Auth.php(53): CodeIgniter\BaseModel->paginate()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->connected()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()

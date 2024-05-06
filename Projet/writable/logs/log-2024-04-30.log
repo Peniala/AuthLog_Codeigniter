@@ -1,0 +1,1408 @@
+CRITICAL - 2024-04-30 07:24:23 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::actualize(), 0 passed in /home/mit/Web/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Auth/actualize]
+in APPPATH/Controllers/Auth.php on line 63.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->actualize()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:24:58 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::actualize(), 0 passed in /home/mit/Web/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Auth/actualize]
+in APPPATH/Controllers/Auth.php on line 63.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->actualize()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:24:59 --> ArgumentCountError: Too few arguments to function App\Controllers\Auth::actualize(), 0 passed in /home/mit/Web/Projet/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: Auth/actualize]
+in APPPATH/Controllers/Auth.php on line 63.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->actualize()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:37:59 --> ErrorException: Undefined array key "page"
+[Method: GET, Route: Auth]
+in APPPATH/Views/view.php on line 24.
+ 1 APPPATH/Views/view.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/mit/Web/Projet/app/Views/view.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Auth.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:38:00 --> ErrorException: Undefined array key "page"
+[Method: GET, Route: Auth]
+in APPPATH/Views/view.php on line 24.
+ 1 APPPATH/Views/view.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/mit/Web/Projet/app/Views/view.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Auth.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:38:48 --> ErrorException: file_put_contents(./tmp.html): Failed to open stream: Permission denied
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(145): file_put_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:08 --> ErrorException: file_put_contents(./tmp.html): Failed to open stream: Permission denied
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(145): file_put_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:09 --> ErrorException: file_put_contents(./tmp.html): Failed to open stream: Permission denied
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(145): file_put_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:09 --> ErrorException: file_put_contents(./tmp.html): Failed to open stream: Permission denied
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(145): file_put_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:09 --> ErrorException: file_put_contents(./tmp.html): Failed to open stream: Permission denied
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(145): file_put_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:10 --> ErrorException: file_put_contents(./tmp.html): Failed to open stream: Permission denied
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(145): file_put_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:10 --> ErrorException: file_put_contents(./tmp.html): Failed to open stream: Permission denied
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(145): file_put_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:14 --> ErrorException: file_put_contents(./tmp.html): Failed to open stream: Permission denied
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(145): file_put_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:14 --> ErrorException: file_put_contents(./tmp.html): Failed to open stream: Permission denied
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(145): file_put_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:14 --> ErrorException: file_put_contents(./tmp.html): Failed to open stream: Permission denied
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(145): file_put_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:29 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:31 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:32 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:33 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:33 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:47:38 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:48:06 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:48:42 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:48:43 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:48:48 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:49:18 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:50:47 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:51:24 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:51:26 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:51:31 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:55:09 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:55:10 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:55:11 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:55:11 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:55:12 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:55:12 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:55:17 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:55:24 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:55:25 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:55:31 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:55:55 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:55:55 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:55:56 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:56:01 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:56:02 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:56:07 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:56:35 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:56:36 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:56:41 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:57:11 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:57:31 --> TypeError: App\Controllers\Auth::export(): Return value must be of type string, none returned
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 158.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:57:32 --> TypeError: App\Controllers\Auth::export(): Return value must be of type string, none returned
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 158.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:59:04 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:59:05 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:59:06 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:59:06 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:59:06 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:59:07 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:59:12 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:59:57 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 07:59:58 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:03 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:12 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:13 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:14 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:14 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:14 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:15 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:15 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:15 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:24 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:25 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:26 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:26 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:27 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:27 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:00:33 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:01:10 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 132.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(132): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:01:11 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 132.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(132): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:01:11 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 132.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(132): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:01:11 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 132.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(132): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:01:11 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 132.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(132): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:01:12 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 132.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(132): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:01:12 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 132.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(132): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:01:12 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 132.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(132): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:01:12 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 132.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(132): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:01:13 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 132.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(132): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:01:14 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 132.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(132): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:01:19 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 132.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(132): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:01:49 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:02:49 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:04:07 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:04:31 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:04:32 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:04:32 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:04:38 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:04:39 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:04:45 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:04:52 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:05:02 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:05:03 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:05:09 --> ErrorException: readfile(output.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 155.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(155): readfile()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:10:54 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:10:55 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:11:01 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:11:31 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:12:31 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:17:31 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:25:13 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:25:19 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:25:20 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:38:04 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:38:06 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:38:11 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:38:17 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:41:23 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:41:28 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:41:30 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:42:53 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:43:24 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:43:38 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:43:56 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:43:58 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:44:03 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:44:04 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:44:34 --> ErrorException: filesize(): stat failed for output.pdf
+[Method: GET, Route: Auth/export]
+in APPPATH/Controllers/Auth.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Auth.php(153): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->export()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:53:01 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: Auth]
+in APPPATH/Views/view.php on line 56.
+ 1 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Auth.php(34): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->index()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-04-30 08:53:19 --> ErrorException: Undefined variable $page
+[Method: GET, Route: Auth]
+in APPPATH/Views/view.php on line 56.
+ 1 APPPATH/Views/view.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/mit/Web/Projet/app/Views/view.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Auth.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
