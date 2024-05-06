@@ -14,4 +14,13 @@ Modification nécessaire :
 - l'utilisateur et le mot de passe pour se connecter à la base de donnée sur le script auth.php ( valeur par défaut : "root" , "" );
 
 #Crontab
-- le chemin vers l'emplacement du script PHP;
+- le chemin vers l'emplacement des scripts PHP sur l'actualisation de la base de donnée et l'envoie du mail;
+
+#Uniformisation de la syntaxe du fichier auth.log
+- ajout du template 10-mytemplate.conf dans /etc/rsyslog.d
+- réecriture de /etc/rsyslog.d/50-default.conf ou /etc/rsyslog.conf : 
+## auth,authpriv.*                 /var/log/auth.log;mytemplate
+- restarter le service rsyslog.service
+
+#Dépendances nécessaires
+#wkhtmltopdf

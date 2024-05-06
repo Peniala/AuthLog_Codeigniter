@@ -6,5 +6,5 @@
 # /path/to/script à remplacer par le chemin vers l'emplacement du script
   
 */5 *  * * *   root    /usr/bin/php /path/to/script/auth.php
-
+0 19	* * *	root	/usr/bin/php /path/to/script/script-mail.php
 ## CRONTAB
