@@ -13,11 +13,11 @@
                 <input type="date" name="date" id="" <?php if(isset($date)) echo "value=\"".$date."\"" ?> >
                 <select name="level" id="" >
                     <option value="">All</option>
-                    <option value="l1" <?php if(isset($type) && $type == "opened") echo "selected" ?>>L1</option>
-                    <option value="l2" <?php if(isset($type) && $type == "closed") echo "selected" ?>>L2</option>
-                    <option value="l3" <?php if(isset($type) && $type == "opened") echo "selected" ?>>L3</option>
-                    <option value="m1" <?php if(isset($type) && $type == "closed") echo "selected" ?>>M1</option>
-                    <option value="m2" <?php if(isset($type) && $type == "closed") echo "selected" ?>>M2</option>
+                    <option value="Li2" <?php if(isset($l) && $l === "Li2") echo "selected" ?>>L2</option>
+                    <option value="Li1" <?php if(isset($l) && $l === "Li1") echo "selected" ?>>L1</option>
+                    <option value="Li3" <?php if(isset($l) && $l === "Li3") echo "selected" ?>>L3</option>
+                    <option value="Mi1" <?php if(isset($l) && $l === "Mi1") echo "selected" ?>>M1</option>
+                    <option value="Mi2" <?php if(isset($l) && $l === "Mi2") echo "selected" ?>>M2</option>
                 </select>
                 <!-- <input type="checkbox" name="opened" id=""><label>Opened</label>
                 <input type="checkbox" name="closed" id=""><label>Closed</label> -->
@@ -37,12 +37,13 @@
                     </tr>
                     <?php foreach($session as $index => $row): ?>
                                 <tr class="<?= ($index%2 != 0) ? "odd" : "even";?>">
-                                    <?php foreach($row as $i => $col): 
+                                    <?php 
                                         // if($i == 'date') echo "<td>".date('d-m-Y h:i:s',strtotime($col))."</td>";
                                         // else echo "<td>".$col."</td>";
-                                        echo "<td>".$col."</td>";
-                                    endforeach;
-                                    echo "<td></td>";?>
+                                        echo "<td>".$row[$index]['nom']." ".$row[$index]['prenoms']."</td>";
+                                        echo "<td>".$row[$index]['grade']." ".$row[$index]['niveau']."</td>";
+                                        echo ($row[$index]['type']==null) ? "<td>disconnected</td>" : "<td>connected</td>";
+                                    ?>
                                 </tr>
                     <?php endforeach ?>
                     

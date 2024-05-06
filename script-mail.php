@@ -3,7 +3,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+require __DIR__.'/vendor/autoload.php';
 
 $mail = new PHPMailer(true);
 
@@ -20,6 +20,9 @@ try{
     inner join personnes on personnes.id_personne = etudiants.id_personne";
 
     $table = $sql->query($request);
+    
+    if($table == null) echo "null";
+
     $i = 1;
     
     $users[0]['name'] = "Nom";
@@ -34,17 +37,17 @@ try{
         $users[$i]['status'] = ($u['type'] == null) ? 'Déconnecté' : 'Connecté'; 
         $i++;
     }
+   
+    print_r($users);
 
     /// Creation du fichier csv
 
     $f = __DIR__.'/connexion.csv';
     $file = fopen($f, 'w');
-
-    echo $f.'<br>';
+    
     foreach ($users as $row) {
         fputcsv($file, $row);
     }
-    fclose($file);
 
     /// Config du Mail avec SMTP
     
@@ -59,9 +62,9 @@ try{
     /// Destinataire
 
     $mail->setFrom('pranaivo@mit-ua.mg');
-    $mail->addReplyTo('arakotoarijaona@mit-ua.mg');
+    $mail->addReplyTo('pranaivo@mit-ua.mg');
 
-    // $mail->addAddress('arakotoarijaona@mit-ua.mg'); Cc
+    $mail->addAddress('pranaivo@mit-ua.mg');
 
     /// Rattacher un fichier
 
@@ -73,11 +76,15 @@ try{
 
     // Envoi du mail
 
-    $mail->send();
+    if (!$mail->send()) echo "Erreur d'envoi";
+    else $mail->send();
+
+    fclose($file);
 
 }
 catch(Exception $exception){
-    echo "Erreur";
+    print_r($exception);
+    echo "\nErreur";
 }
 
 ?>

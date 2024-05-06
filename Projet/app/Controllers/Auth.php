@@ -41,8 +41,14 @@ class Auth extends BaseController
         $session = [];
         $date = $this->request->getVar("date");
         if($date === null) $date = date("Y-m-d");
+
+        $l = $this->request->getVar("level");
+        $level = explode("i",$l);
+        if(empty($l)) $level = ['',''];
+
         $user = $this->request->getVar("user");
         if($user === null) $user = "";
+
         $page = $this->request->getVar("page");
         if($page === null) $page = 1;
 
@@ -50,9 +56,11 @@ class Auth extends BaseController
             'date' => $date,
             'user' => $user,
             'page' => $page,
-            'session' => ($cond==0)?$auth->like('t.user',$user)->getConnected($date)->paginate(10):$auth->getConnected($date)->findAll(),
+            'level' => $l,
+            'session' => ($cond==0) ? $auth->like('inscription.grade',$level[0])->like('inscription.niveau',$level[1])->like('session.user',$user)->getConnected($date)->paginate(10) : $auth->getConnected($date)->findAll(),
+            // 'session' => $auth->getConnected($date)->findAll(),
             'pager' => $auth->getConnected($date)->pager,
-	    'cond' => $cond		
+	        'cond' => $cond		
 	];
 
         for($i=0 ; $i<count($session["session"]) ; $i++)
@@ -113,7 +121,7 @@ class Auth extends BaseController
             if(strstr($line,"session closed") || strstr($line,"session opened")){
                 sscanf($line,"%[^ ] %[^ ] %[^ ] %[^ ] %[^:]: %*[^ ] session %[^ ] for user %[^\n]",$mois,$jour,$heure,$hostname,$process,$typeSession,$user);
                 if(strcmp($typeSession,"opened")==0){
-                    $tmp=explode(" ",$user);
+                    $tmp=explode("(",$user);
                     $user=$tmp[0];
                 }
 
@@ -122,14 +130,14 @@ class Auth extends BaseController
                 }
                 
                 $data[$i]=array(
-                    'date'=>$year."-".$numMois[$mois]."-".$jour." ".$heure,
+                    'date'=>$year."-".$numMois[$mois]."-0".$jour." ".$heure,
                     'hostname'=>$hostname,
                     'process'=>$process,
                     'type'=>$typeSession,
                     'user'=>$user,
                 );	
                 
-                if($data[$i]['date'] > $lastDate){
+                if($data[$i]['date'] > $lastDate && $data[$i]['user']!="root" && $data[$i]['user']!="gdm"){
                     $auth->insert($data[$i]);
                 }    
 
@@ -142,6 +150,7 @@ class Auth extends BaseController
 
         if(isset($page)) return redirect()->to($page."?date=".$d."&hostname=".$h."&type=".$t."&process=".$pr."&user=".$u."&page=".$p);
         else return redirect()->to($page);
+
     }
     public function export($cond):string{
 	
