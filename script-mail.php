@@ -111,7 +111,7 @@ try{
     // Envoi du mail
 
     if (!$mail->send()) echo "Erreur d'envoi";
-    // else $mail->send();
+    else $mail->send();
 
 }
 catch(Exception $exception){

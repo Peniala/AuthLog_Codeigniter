@@ -27,7 +27,7 @@ class Auth extends BaseController
             'process' => $process,
             'type' => $type,
             'user' => $user,
-            'session' => $auth->getList()->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->like("user",$user)->paginate(10),
+            'session' => $auth->getList()->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->groupStart()->like("nom",$user)->orLike("prenoms",$user)->groupEnd()->paginate(10),
             'pager' => $auth->pager
         ];
 
