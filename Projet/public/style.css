@@ -120,6 +120,13 @@ table tr:hover{
 table td{
     padding: 2vh 2vw;
 }
+table td a{
+    text-decoration: none;
+    color: black;
+}
+table tr:hover a{
+    color: #fff;
+}
 table .even{
     background-color: rgb(201, 204, 216);
 }

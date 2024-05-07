@@ -46,8 +46,10 @@
                     <?php foreach($session as $index => $row): ?>
                                 <tr class="<?= ($index%2 != 0) ? "odd" : "even";?>">
                                     <?php foreach($row as $i => $col): 
-                                        if($i == 'date') echo "<td>".date('d-m-Y h:i:s',strtotime($col))."</td>";
-                                        else echo "<td>".$col."</td>";
+                                        if($i == 'date') echo "<td><a href=\"/PersonnalStat?year=".date('Y',strtotime($row["date"]))."&month=".date('m',strtotime($row["date"]))."&user=".$row['hostname']."\">".date('d-m-Y h:i:s',strtotime($col))."</a></td>";
+                                        else if($i == 'nom') echo "<td><a href=\"/PersonnalStat?year=".date('Y',strtotime($row["date"]))."&month=".date('m',strtotime($row["date"]))."&user=".$row['hostname']."\">".$row["nom"]." ".$row["prenoms"]."</a></td>";
+                                        else if($i == 'prenoms') continue;
+                                        else echo "<td><a href=\"/PersonnalStat?year=".date('Y',strtotime($row["date"]))."&month=".date('m',strtotime($row["date"]))."&user=".$row['hostname']."\">".$col."</a></td>";
                                     endforeach ?>
                                 </tr>
                     <?php endforeach ?>

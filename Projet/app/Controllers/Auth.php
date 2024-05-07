@@ -27,7 +27,7 @@ class Auth extends BaseController
             'process' => $process,
             'type' => $type,
             'user' => $user,
-            'session' => $auth->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->like("user",$user)->paginate(10),
+            'session' => $auth->getList()->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->like("user",$user)->paginate(10),
             'pager' => $auth->pager
         ];
 
@@ -209,4 +209,105 @@ class Auth extends BaseController
 
         return view('chart',$stat);
     }
-}
+    
+    public function personnalStat(): string
+    {
+        $month = $this->request->getVar("month");
+        $year = $this->request->getVar("year");
+        $user = $this->request->getVar("user");
+
+        $var = [
+            "year" => (int) $year,
+            "month" => (int) $month,
+            "user" => $user,
+            "test" => "Tsisy"
+        ];
+
+        if($month == null) $month = date("m");
+        if($year == null) $year = date("Y");
+        if($user == null) return view("personnal_stat",$var);
+
+        $date = $year."-".$month;
+        
+        $model = new AuthLog();
+        $data = $model->getConnected($date)->where("hostname",$user)->findAll();
+        
+        $month = (int) $month;
+        $year = (int) $year;
+        $calendar = $this->generateCalendar($month,$year);
+        $tab = $this->transformData($data);
+        $this->mapCalendar($calendar,$tab);
+
+        $data = $model->getConnected("")->where("hostname",$user)->findAll();
+        
+        $var = [
+            "year" => (int) $year,
+            "month" => (int) $month,
+            "user" => $user,
+            "calendar" => $calendar,
+            "tab" => $tab,
+            "data" => $data
+        ];
+
+        return view("personnal_stat",$var);
+    }
+
+    public function generateCalendar($month,$year)
+    {
+        $time = mktime(0,0,0,$month,1,$year);
+        $today = explode(" ",date("d m Y"));
+        $ref = [
+            "Mon" => 0,
+            "Tue" => 1,
+            "Wed" => 2,
+            "Thu" => 3,
+            "Fri" => 4,
+            "Sat" => 5,
+            "Sun" => 6
+        ];
+        
+        $day = date("D",$time);
+        $daysNumber = (int) date("t",$time);
+        $firstDay = $ref[$day];
+        $lastDay = ($ref[$day]+$daysNumber-1)%7;
+        
+        $calendar = [];
+        $calendar["startSpace"] = $firstDay;
+        
+        $week = [];
+        $day = [];
+        $d = $firstDay;
+        for($i=1 ; $i<=$daysNumber ; $i++,$d++){
+            if($d%7 === 0){
+                $calendar["body"][] = $week;
+                $week = [];
+            }
+            $day["value"] = $i;
+            $day["state"] = 0;
+            if($year == $today[2] && $month == $today[1] && $i == $today[0]) $day["state"] = 2;
+            $week[] = $day;
+        }
+        $calendar["body"][] = $week;
+        $calendar["endSpace"] = 6 - $lastDay;
+
+        return $calendar;
+    }
+
+    public function transformData($data){
+        $tab = [];
+        foreach($data as $item){
+            $date = explode(" ",$item["date"])[0];
+            $day = (int) explode("-",$date)[2];
+            $tab[$day] = 1;
+        }
+        return $tab;
+    }
+
+    public function mapCalendar(&$calendar,$data){
+        foreach($calendar["body"] as &$week){
+            foreach($week as &$day){
+                if(isset($data[$day["value"]]) && $day["state"] != 2) $day["state"] = 1;
+            }
+        }
+    }
+}   

@@ -9,10 +9,19 @@
         /* *{
             border: solid;
         } */
+        .barre_nav{
+            margin: 0;
+            position: fixed;
+            height: 15%;
+            display: flex;
+            background-color: #fff;
+            width: 50%;
+            transition: 0.2s;
+        }
         .charts{
-            margin-top: 15%; 
+            margin-top: 3%; 
             display: grid;
-            grid-template-columns: repeat(2,0.5fr);
+            grid-template-columns: repeat(2,1fr);
             align-content: center;
         }
         .license, .master{
@@ -20,12 +29,16 @@
             grid-template-columns: repeat(2,1fr);
         }
         .pie{
-            width: 80%;
+            margin: 15% 5% 0 10%;
+            width: 75%;
             height: auto;
             text-align: center;
         }
+        .levels{
+            margin-top:5%;
+        }
         .bars{
-            width: 90%;
+            width: 80%;
         }
         h4{
             color: #888;
@@ -36,21 +49,13 @@
 </head>
 <body>
     <nav class="barre_nav">
-            <form action="/Dashboard">
-                <input type="date" name="date" id="" <?php if(isset($date)) echo "value=\"".$date."\"" ?> >
-                <!-- <select name="level" id="" >
-                    <option value="">All</option>
-                    <option value="l1" <?php if(isset($type) && $type == "opened") echo "selected" ?>>L1</option>
-                    <option value="l2" <?php if(isset($type) && $type == "closed") echo "selected" ?>>L2</option>
-                    <option value="l3" <?php if(isset($type) && $type == "opened") echo "selected" ?>>L3</option>
-                    <option value="m1" <?php if(isset($type) && $type == "closed") echo "selected" ?>>M1</option>
-                    <option value="m2" <?php if(isset($type) && $type == "closed") echo "selected" ?>>M2</option>
-                </select>     -->
+        <form action="/Dashboard">
+            <input type="date" name="date" id="" <?php if(isset($date)) echo "value=\"".$date."\"" ?> >
             <button type="submit">Search</button>
             <a href="/Auth/actualize?date=<?= $date;?>&p=/Dashboard" class="actu"><button type="button">Actualize</button></a>
         </form>
     </nav>
-    <section class="charts center">
+    <section class="center charts">
         <div class="pie">
             <canvas id="global"></canvas>
         </div>
@@ -105,9 +110,9 @@
             data: {
                 labels: ['Connected','Not connected'],
                 datasets: [{
-                    label : ['Connected','Not connected'],
+                    label: 'personnes',
                     backgroundColor:['#471696','#aaa1d8'],
-                    data: [<?= count($l1+$l2+$l3+$m1+$m2).",".count($l1_c+$l2_c+$l3_c+$m1_c+$m2_c);?>]
+                    data: [<?= count($l1_c)+count($l2_c)+count($l3_c)+count($m1_c)+count($m2_c).','.(count($l1)+count($l2)+count($l3)+count($m1)+count($m2)-count($l1_c)-count($l2_c)-count($l3_c)-count($m1_c)-count($m2_c));?>]
                 }]
             }
         });
@@ -116,9 +121,8 @@
             data: {
                 labels: ['Connected','Not connected'],
                 datasets: [{
-                    label : ['Connected','Not connected'],
                     backgroundColor:['#00977e','#fc844d'],
-                    data: [<?= count($l1).",".count($l1_c);?>]
+                    data: [<?= count($l1_c).",".count($l1)-count($l1_c);?>]
                 }]
             }
         });
@@ -127,9 +131,8 @@
             data: {
                 labels: ['Connected','Not connected'],
                 datasets: [{
-                    label : ['Connected','Not connected'],
                     backgroundColor:['#109754','#f7693e'],
-                    data: [<?= count($l2).",".count($l2_c);?>]
+                    data: [<?= count($l2_c).",".count($l2)-count($l2_c);?>]
                 }]
             }
         });
@@ -138,9 +141,8 @@
             data: {
                 labels: ['Connected','Not connected'],
                 datasets: [{
-                    label : ['Connected','Not connected'],
                     backgroundColor:['#36506d','#e22626'],
-                    data: [<?= count($l3).",".count($l3_c);?>]
+                    data: [<?= count($l3_c).",".count($l3)-count($l3_c);?>]
                 }]
             }
         });
@@ -149,9 +151,8 @@
             data: {
                 labels: ['Connected','Not connected'],
                 datasets: [{
-                    label : ['Connected','Not connected'],
                     backgroundColor:['#0d1094','#df0303'],
-                    data: [<?= count($m1).",".count($m1_c);?>]
+                    data: [<?= count($m1_c).",".count($m1)-count($m1_c);?>]
                 }]
             }
         });
@@ -160,9 +161,8 @@
             data: {
                 labels: ['Connected','Not connected'],
                 datasets: [{
-                    label : ['Connected','Not connected'],
                     backgroundColor:['#1e21da','#ff0000'],
-                    data: [<?= count($m2).",".count($m2_c);?>]
+                    data: [<?= count($m2_c).",".count($m2)-count($m2_c);?>]
                 }]
             }
         });
@@ -178,8 +178,8 @@
         button_nav.addEventListener("click",()=>{
             if(list_nav.style.display === "block"){
                 center.style.width = "90%";
-                barre_nav.style.width = "90%";
-                barre_nav.style.height = "15%";
+                barre_nav.style.width = "35%";
+                // barre_nav.style.height = "15%";
                 barre_nav.style.textAlign = "left";
                 image.setAttribute("src","./bars.png");
                 list_nav.style.display = "none";
@@ -189,15 +189,15 @@
             }
             else{
                 center.style.width = "80%";
-                barre_nav.style.width = "80%";
-                barre_nav.style.height = "18%";
+                barre_nav.style.width = "35%";
+                // barre_nav.style.height = "18%";
                 barre_nav.style.textAlign = "center";
                 image.setAttribute("src","./chevron-down.png");
                 list_nav.style.display = "block";
                 side_bar.style.backgroundColor = "#030838";
                 side_bar.style.width = "20%";
                 button_nav.style.backgroundColor = "#fff";
-                title.style.marginTop = "11%";
+                title.style.marginTop = "12%";
             }
             // alert('click');
         });
