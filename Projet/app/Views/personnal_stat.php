@@ -1,3 +1,31 @@
+<?php
+    $ref = [
+        1 => "January",
+        2 => "February",
+        3 => "March",
+        4 => "April",
+        5 => "May",
+        6 => "June",
+        7 => "July",
+        8 => "August",
+        9 => "September",
+        10 => "October",
+        11 => "November",
+        12 => "December"
+    ];
+    $nextMonth = $month+1;
+    $prevMonth = $month-1;
+    $nextYear = $year;
+    $prevYear = $year;
+    if($nextMonth == 13){
+        $nextMonth = 1;
+        $nextYear++;
+    }
+    if($prevMonth == 0){
+        $prevMonth = 12;
+        $prevYear--;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,27 +35,7 @@
     <title>My Calendar</title>
 </head>
 <body>
-    <nav class="barre_nav">
-        <form action="/PersonnalStat" method="GET">
-            <select name="month" required>
-                <option value="01" <?php if(isset($month) && $month==1) echo "selected"?> >January</option>
-                <option value="02" <?php if(isset($month) && $month==2) echo "selected"?> >February</option>
-                <option value="03" <?php if(isset($month) && $month==3) echo "selected"?> >March</option>
-                <option value="04" <?php if(isset($month) && $month==4) echo "selected"?> >April</option>
-                <option value="05" <?php if(isset($month) && $month==5) echo "selected"?> >May</option>
-                <option value="06" <?php if(isset($month) && $month==6) echo "selected" ?> >June</option>
-                <option value="07" <?php if(isset($month) && $month==7) echo "selected" ?> >July</option>
-                <option value="08" <?php if(isset($month) && $month==8) echo "selected" ?> >August</option>
-                <option value="09" <?php if(isset($month) && $month==9) echo "selected" ?> >September</option>
-                <option value="10" <?php if(isset($month) && $month==10) echo "selected" ?> >October</option>
-                <option value="11" <?php if(isset($month) && $month==11) echo "selected" ?> >November</option>
-                <option value="12" <?php if(isset($month) && $month==12) echo "selected" ?> >December</option>
-            </select>
-            <input type="number" name="year" min="2023" <?php if(isset($year)) echo 'value="'.$year.'"'?>>
-            <input type="hidden" name="user" placeholder="User" <?php if(isset($user)) echo 'value="'.$user.'"'; ?>>
-            <button>Show</button>
-        </form>
-    </nav>
+    
     
     <div class="container">
         <section class="stat">
@@ -36,6 +44,33 @@
         </section>
         <table class="calendar">
             <thead>
+                <tr>
+                    <th><a class="nav" href="/PersonnalStat?user=<?=$user?>&year=<?=$prevYear?>&month=<?=$prevMonth?>"><</a></th>
+                    <th class="title" colspan="5">
+                        <nav class="barre_nav">
+                            <form action="/PersonnalStat" method="GET">
+                                <select name="month" required>
+                                    <option value="01" <?php if(isset($month) && $month==1) echo "selected"?> >January</option>
+                                    <option value="02" <?php if(isset($month) && $month==2) echo "selected"?> >February</option>
+                                    <option value="03" <?php if(isset($month) && $month==3) echo "selected"?> >March</option>
+                                    <option value="04" <?php if(isset($month) && $month==4) echo "selected"?> >April</option>
+                                    <option value="05" <?php if(isset($month) && $month==5) echo "selected"?> >May</option>
+                                    <option value="06" <?php if(isset($month) && $month==6) echo "selected" ?> >June</option>
+                                    <option value="07" <?php if(isset($month) && $month==7) echo "selected" ?> >July</option>
+                                    <option value="08" <?php if(isset($month) && $month==8) echo "selected" ?> >August</option>
+                                    <option value="09" <?php if(isset($month) && $month==9) echo "selected" ?> >September</option>
+                                    <option value="10" <?php if(isset($month) && $month==10) echo "selected" ?> >October</option>
+                                    <option value="11" <?php if(isset($month) && $month==11) echo "selected" ?> >November</option>
+                                    <option value="12" <?php if(isset($month) && $month==12) echo "selected" ?> >December</option>
+                                </select>
+                                <input type="number" name="year" min="2023" <?php if(isset($year)) echo 'value="'.$year.'"'?>>
+                                <input type="hidden" name="user" placeholder="User" <?php if(isset($user)) echo 'value="'.$user.'"'; ?>>
+                                <button>Show</button>
+                            </form>
+                        </nav>
+                    </th>
+                    <th><a class="nav" href="/PersonnalStat?user=<?=$user?>&year=<?=$nextYear?>&month=<?=$nextMonth?>">></a></th>
+                </tr>
                 <tr>
                     <th>Lun</th>
                     <th>Mar</th>
@@ -58,7 +93,7 @@
                             <tr>
                         <?php endif ?>
                         <?php for($j=0 ; $j<count($calendar["body"][$i]) ; $j++): ?>
-                            <td <?php if($calendar["body"][$i][$j]["state"] == 1) echo 'class="valid"'; else if($calendar["body"][$i][$j]["state"] == 2) echo 'class="today"'; ?> ><?= $calendar["body"][$i][$j]["value"] ?></td>
+                            <td <?php if($calendar["body"][$i][$j]["state"] == 1) echo 'class="valid"'; else if($calendar["body"][$i][$j]["state"] == 2) echo 'class="today"'; ?> ><p><?= $calendar["body"][$i][$j]["value"] ?></p></td>
                         <?php endfor ?>
                         <?php if($i!==count($calendar["body"])-1 || $calendar["endSpace"]===0): ?>
                             </tr>
@@ -95,9 +130,9 @@
         button_nav.addEventListener("click",()=>{
             if(list_nav.style.display === "block"){
                 center.style.width = "90%";
-                barre_nav.style.width = "90%";
-                barre_nav.style.height = "15%";
-                barre_nav.style.textAlign = "left";
+                // barre_nav.style.width = "90%";
+                // barre_nav.style.height = "15%";
+                // barre_nav.style.textAlign = "left";
                 image.setAttribute("src","./bars.png");
                 list_nav.style.display = "none";
                 side_bar.style.backgroundColor = "#ececec";
@@ -106,9 +141,9 @@
             }
             else{
                 center.style.width = "80%";
-                barre_nav.style.width = "80%";
-                barre_nav.style.height = "18%";
-                barre_nav.style.textAlign = "center";
+                // barre_nav.style.width = "80%";
+                // barre_nav.style.height = "18%";
+                // barre_nav.style.textAlign = "center";
                 image.setAttribute("src","./chevron-down.png");
                 list_nav.style.display = "block";
                 side_bar.style.backgroundColor = "#030838";

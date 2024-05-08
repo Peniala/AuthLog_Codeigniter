@@ -9,20 +9,28 @@ body{
 }
 .barre_nav{
     margin: 0;
-    position: fixed;
-    height: 15%;
     display: flex;
-    background-color: rgb(236, 236, 236);
-    width: 90%;
+    width: 100%;
     transition: 0.2s;
 }
 form{
     padding: 3vh 1vw;
     padding-left: 0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
-form input, form select, form button{
+form input, form button{
+    width: 80px;
+    padding: 1vh 1vw;
+    border-radius: 50px;
+    border: 1px solid rgb(138, 138, 138);
+}
+form select{
     /* width: 15%; */
-    margin: 1vh 0.5vw;
+    /* margin: 1vh 0.5vw; */
+    width: 130px;
     padding: 1vh 1vw;
     border-radius: 50px;
     border: 1px solid rgb(138, 138, 138);
@@ -50,14 +58,14 @@ form .actu{
     text-align: center;
 }
 .container{
-    margin: 10% 0;
+    margin: 5% 0;
     width:80%;
     display: flex;
     justify-content: space-evenly;
 }
 .container .calendar{
-    width:50%;
-    border-collapse: collapse;
+    width:70%;
+    /* border-collapse: collapse; */
     border-radius: 10px;
     background-color: white;
     box-shadow: 1px 1px 5px 2px grey;
@@ -66,6 +74,16 @@ form .actu{
     text-align: center;
     height: 70px;
     color: rgb(136, 136, 136);
+}
+.container .calendar .title{
+    color: #000;
+    font-size: 20px;
+}
+.container .calendar .nav{
+    color: #888888;
+    font-weight: 900;
+    font-size: 20px;
+    text-decoration: none;
 }
 .container .calendar td{
     font-size: 20px;

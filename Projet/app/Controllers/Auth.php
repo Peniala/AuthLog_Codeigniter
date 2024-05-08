@@ -27,7 +27,8 @@ class Auth extends BaseController
             'process' => $process,
             'type' => $type,
             'user' => $user,
-            'session' => $auth->getList()->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->groupStart()->like("nom",$user)->orLike("prenoms",$user)->groupEnd()->paginate(10),
+            'session' => $auth->getList()->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->groupStart()->like("nom",$user)->orLike("prenoms",$user)->groupEnd()->orderBy("date")->paginate(10),
+            // 'session' => $auth->getList()->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->like("user",$user)->paginate(10),
             'pager' => $auth->pager
         ];
 
@@ -227,7 +228,7 @@ class Auth extends BaseController
         if($year == null) $year = date("Y");
         if($user == null) return view("personnal_stat",$var);
 
-        $date = $year."-".$month;
+        $date = $year."-".date("m",strtotime($year."-".$month));
         
         $model = new AuthLog();
         $data = $model->getConnected($date)->where("hostname",$user)->findAll();

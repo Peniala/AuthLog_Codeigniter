@@ -13,7 +13,14 @@ try{
     $sql = new mysqli('localhost','mit','123456','mit') or die("Erreur de connexion");
     
     $request = "select distinct ip,user,id_machine,grade,niveau,nom,prenoms,type,date from session 
-    right join dhcp on hostname = ip and session.date like '".date('Y-m-d',time())."%' and type = 'opened' 
+    right join dhcp on hostname = ip and session.date like '".date("Y-m-d",time())."%' and type = 'opened' 
+    left join machine_etudiants on id_machine_etudiant = id_machine 
+    inner join inscription on machine_etudiants.id_inscription = inscription.id_inscription 
+    inner join etudiants on etudiants.id_etudiant = inscription.id_etudiant 
+    inner join personnes on personnes.id_personne = etudiants.id_personne ";
+
+    $count = "select distinct count(*) as number from session 
+    right join dhcp on hostname = ip and session.date like '".date("Y-m-d",time())."%' and type = 'opened' 
     left join machine_etudiants on id_machine_etudiant = id_machine 
     inner join inscription on machine_etudiants.id_inscription = inscription.id_inscription 
     inner join etudiants on etudiants.id_etudiant = inscription.id_etudiant 
@@ -21,20 +28,20 @@ try{
 
     $table = $sql->query($request);
 
-    $r1 = mysqli_fetch_assoc($sql->query($request."where inscription.grade = 'L' and inscription.niveau = 1 and session.type is NULL"));
-    $l1_nc = count(($r1 == null)? []: $r1);
+    $r1 = mysqli_fetch_assoc($sql->query($count."where inscription.grade = 'L' and inscription.niveau = 1 and session.type is NULL"));
+    $l1_nc = $r1["number"];
     
-    $r1 = mysqli_fetch_assoc($sql->query($request."where inscription.grade = 'L' and inscription.niveau = 2 and session.type is NULL"));
-    $l2_nc = count(($r1 == null)? []: $r1);
+    $r1 = mysqli_fetch_assoc($sql->query($count."where inscription.grade = 'L' and inscription.niveau = 2 and session.type is NULL"));
+    $l2_nc = $r1["number"];
 
-    $r1 = mysqli_fetch_assoc($sql->query($request."where inscription.grade = 'L' and inscription.niveau = 3 and session.type is NULL"));
-    $l3_nc = count(($r1 == null)? []: $r1);
+    $r1 = mysqli_fetch_assoc($sql->query($count."where inscription.grade = 'L' and inscription.niveau = 3 and session.type is NULL"));
+    $l3_nc = $r1["number"];
 
-    $r1 = mysqli_fetch_assoc($sql->query($request."where inscription.grade = 'L' and inscription.niveau = 1 and session.type is NULL"));
-    $m1_nc = count(($r1 == null)? []: $r1);
+    $r1 = mysqli_fetch_assoc($sql->query($count."where inscription.grade = 'M' and inscription.niveau = 1 and session.type is NULL"));
+    $m1_nc = $r1["number"];
 
-    $r1 = mysqli_fetch_assoc($sql->query($request."where inscription.grade = 'L' and inscription.niveau = 2 and session.type is NULL"));
-    $m2_nc = count(($r1 == null)? []: $r1);
+    $r1 = mysqli_fetch_assoc($sql->query($count."where inscription.grade = 'M' and inscription.niveau = 2 and session.type is NULL"));
+    $m2_nc = $r1["number"];
     
     if($table == null) echo "null";
 
@@ -58,13 +65,13 @@ try{
     $message .= "<h4 style=\" margin: auto; padding: 1vw; width: 60%; border: 1px solid #040b47; text-align : center; \">Liste L3 non connectés : ".$l3_nc."</h4>";
     $message .= "<h4 style=\" margin: auto; padding: 1vw; width: 60%; border: 1px solid #040b47; text-align : center; \">Liste M1 non connectés : ".$m1_nc."</h4>";
     $message .= "<h4 style=\" margin: auto; padding: 1vw; width: 60%; border: 1px solid #040b47; text-align : center; \">Liste M2 non connectés : ".$m2_nc."</h4>";
-
+    
     $message .= "<table style=\"width: 80%; text-align: center; margin: auto; margin-top: 3vh; border-collapse: collapse; border-spacing: 5vw; font-family: sans-serif\">";
     
     foreach($users as $index => $row):
-        $color = ($index%2 == 0) ? "background-color: rgb(201, 204, 216);":"";
+        $color = ($row["status"] == "Déconnecté") ? "background-color: rgb(201, 204, 216);":"";
         if($index == 0){
-            $message .= "<tr style=\"border: 1px solid #464141; background-color: #040b47; font-color = #ffffff;\">";
+            $message .= "<tr style=\"border: 1px solid #464141; background-color: #040b47; color : #ffffff;\">";
             $message .= "<th>".$users[$index]["name"]."</th>";
             $message .= "<th>".$users[$index]["level"]."</th>";
             $message .= "<th>".$users[$index]["ip"]."</th>";

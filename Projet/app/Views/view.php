@@ -32,6 +32,7 @@
                 <a href="Auth/actualize?date=<?= $date;?>&hostname=<?= $hostname;?>&type=<?= $type;?>&process=<?= $process;?>&user=<?= $user;?>&page=<?= $page;?>" class="actu"><button type="button">Actualize</button></a>
             </form>
         </nav>
+        
         <h1 class="title">Auth.log file</h1>
             <?php if(isset($session) && is_array($session)): ?>
                 <table>
@@ -47,8 +48,8 @@
                                 <tr class="<?= ($index%2 != 0) ? "odd" : "even";?>">
                                     <?php foreach($row as $i => $col): 
                                         if($i == 'date') echo "<td><a href=\"/PersonnalStat?year=".date('Y',strtotime($row["date"]))."&month=".date('m',strtotime($row["date"]))."&user=".$row['hostname']."\">".date('d-m-Y h:i:s',strtotime($col))."</a></td>";
-                                        else if($i == 'nom') echo "<td><a href=\"/PersonnalStat?year=".date('Y',strtotime($row["date"]))."&month=".date('m',strtotime($row["date"]))."&user=".$row['hostname']."\">".$row["nom"]." ".$row["prenoms"]."</a></td>";
-                                        else if($i == 'prenoms') continue;
+                                        // else if($i == 'nom') echo "<td><a href=\"/PersonnalStat?year=".date('Y',strtotime($row["date"]))."&month=".date('m',strtotime($row["date"]))."&user=".$row['hostname']."\">".$row["nom"]." ".$row["prenoms"]."</a></td>";
+                                        // else if($i == 'prenoms') continue;
                                         else echo "<td><a href=\"/PersonnalStat?year=".date('Y',strtotime($row["date"]))."&month=".date('m',strtotime($row["date"]))."&user=".$row['hostname']."\">".$col."</a></td>";
                                     endforeach ?>
                                 </tr>
@@ -58,6 +59,7 @@
                 <?= $pager->links() ?>
             <?php endif ?>
     </section>
+    
     <div class="side_bar">
         <div class="button_nav">
             <img src="./bars.png" alt="Bars" id="image">

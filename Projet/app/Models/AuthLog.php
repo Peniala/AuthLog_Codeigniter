@@ -46,29 +46,22 @@ class AuthLog extends Model
     }
 
     public function getList(){
-        $this->builder()->select([
-            'session.id',
-            'session.date',
-            'session.hostname',
-            'session.process',
-            'session.type',
-            // 'session.user',
-            // 'machine_etudiants.id_machine',
-            // 'inscription.grade',
-            // 'inscription.niveau',
-            'personnes.nom',
-            'personnes.prenoms',
-            
-            
-         ]);
- 
-         $this->join('dhcp', "dhcp.ip = session.hostname",'right');
-         $this->join('machine_etudiants', 'machine_etudiants.id_machine = dhcp.id_machine_etudiant','inner');
-         $this->join('inscription', 'machine_etudiants.id_inscription = inscription.id_inscription','inner');
-         $this->join('etudiants', 'etudiants.id_etudiant = inscription.id_etudiant','inner');
-         $this->join('personnes', 'personnes.id_personne = etudiants.id_personne','inner');
+        $this->builder()->select(
+            'session.id,
+            session.date,
+            session.hostname,
+            session.process,
+            session.type,
+            COALESCE(CONCAT(personnes.nom," ",personnes.prenoms),"unknown") as user'
+        );
+        //  $this->from("session");
+        $this->join('dhcp', "session.hostname = dhcp.ip",'left');
+        $this->join('machine_etudiants', 'dhcp.id_machine_etudiant = machine_etudiants.id_machine','left');
+        $this->join('inscription', 'machine_etudiants.id_inscription = inscription.id_inscription','left');
+        $this->join('etudiants', 'inscription.id_etudiant = etudiants.id_etudiant','left');
+        $this->join('personnes', 'etudiants.id_personne = personnes.id_personne','left');
 
-         return $this;
+        return $this;
     }
     
 }
