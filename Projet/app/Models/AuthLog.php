@@ -52,7 +52,7 @@ class AuthLog extends Model
             session.hostname,
             session.process,
             session.type,
-            COALESCE(CONCAT(personnes.nom," ",personnes.prenoms),"unknown") as user'
+            COALESCE(CONCAT(personnes.nom," ",personnes.prenoms),"unknown")'
         );
         
         $this->join('dhcp', "session.hostname = dhcp.ip",'left');

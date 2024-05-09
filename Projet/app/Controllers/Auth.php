@@ -28,7 +28,7 @@ class Auth extends BaseController
             'type' => $type,
             'user' => $user,
             // 'session' => $auth->getList()->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->groupStart()->like("nom",$user)->orLike("prenoms",$user)->groupEnd()->orderBy("date")->paginate(10),
-            'session' => $auth->getList()->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->like("user",$user)->orderBy('date')->paginate(10),
+            'session' => $auth->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->like("COALESCE(CONCAT(personnes.nom,' ',personnes.prenoms),'unknown')",$user)->getList()->orderBy('date')->paginate(10),
             'pager' => $auth->pager
         ];
 
