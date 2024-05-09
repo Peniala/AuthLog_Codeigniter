@@ -1,47 +1,19 @@
 <table>
                     <tr>
-                        <td>Id</td>
-                        <td>Date</td>
-                        <td>Hostname</td>
-                        <td>Process</td>
-                        <td>Type</td>
                         <td>User</td>
+                        <td>Level</td>
+                        <td>Status</td>
                     </tr>
                                                     <tr class="even">
-                                    <td>1</td><td>04-05-2024 06:18:01</td><td>127.0.0.1</td><td>CRON[7596]</td><td>opened</td><td>root</td>                                </tr>
+                                    <td>RABEMANANJARA Tsito Marainafitahina</td><td>L 2</td><td>disconnected</td>                                </tr>
                                                     <tr class="odd">
-                                    <td>2</td><td>04-05-2024 06:18:01</td><td>127.0.0.1</td><td>CRON[7596]</td><td>closed</td><td>root</td>                                </tr>
+                                    <td>RANDRIAMITANDRINA Tsiory Fanambinana</td><td>L 2</td><td>disconnected</td>                                </tr>
                                                     <tr class="even">
-                                    <td>3</td><td>04-05-2024 06:19:01</td><td>127.0.0.1</td><td>CRON[7612]</td><td>opened</td><td>root</td>                                </tr>
+                                    <td>RANDRIANANTENAINA Hajatiana Michelas</td><td>L 2</td><td>disconnected</td>                                </tr>
                                                     <tr class="odd">
-                                    <td>4</td><td>04-05-2024 06:19:01</td><td>127.0.0.1</td><td>CRON[7612]</td><td>closed</td><td>root</td>                                </tr>
-                                                    <tr class="even">
-                                    <td>5</td><td>04-05-2024 06:20:01</td><td>127.0.0.1</td><td>CRON[7628]</td><td>opened</td><td>root</td>                                </tr>
-                                                    <tr class="odd">
-                                    <td>6</td><td>04-05-2024 06:20:01</td><td>127.0.0.1</td><td>CRON[7628]</td><td>closed</td><td>root</td>                                </tr>
-                                                    <tr class="even">
-                                    <td>7</td><td>04-05-2024 06:21:01</td><td>127.0.0.1</td><td>CRON[7644]</td><td>opened</td><td>root</td>                                </tr>
-                                                    <tr class="odd">
-                                    <td>8</td><td>04-05-2024 06:21:01</td><td>127.0.0.1</td><td>CRON[7644]</td><td>closed</td><td>root</td>                                </tr>
-                                                    <tr class="even">
-                                    <td>9</td><td>04-05-2024 06:22:01</td><td>127.0.0.1</td><td>CRON[7659]</td><td>opened</td><td>root</td>                                </tr>
-                                                    <tr class="odd">
-                                    <td>10</td><td>04-05-2024 06:22:01</td><td>127.0.0.1</td><td>CRON[7659]</td><td>closed</td><td>root</td>                                </tr>
+                                    <td>RANDRIAMAROTIA Fanirilalaina Ambinintsoanavalona Johan Adrien</td><td>L 2</td><td>connected</td>                                </tr>
                                         
-                </table><style>*{
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    display: flex;
-    font-family: sans-serif;
-}
-.center{
-    /* border: solid; */
-    width: 90%;
-    transition: 0.5s;
-}
-.barre_nav{
+                </table><style>.barre_nav{
     margin: 0;
     position: fixed;
     height: 15%;
@@ -65,63 +37,19 @@ form .actu{
     width: 15%;
     /* border: solid; */
     text-decoration: none;
+}*{
+    margin: 0;
+    box-sizing: border-box;
 }
-.side_bar{
-    width: 10%;
-    position: fixed;
-    right: 0;
-    height: 100%;
-    transition: 1s;
+
+body{
+    display: flex;
+    font-family: sans-serif;
 }
-.button_nav {
-    border: 1px solid #161e69;
-    margin: 5vh auto;
-    padding: 1vh 0.5vw;
-    border-radius: 50px;
-    width: 3vw;
-    height: 6vh;
-    display: block;
-    text-align: center;
-}
-.button_nav img{
+.center{
     width: 90%;
-    height: 100%;
-    color: #040b47;
-    transition: 2s;
-}
-.list{
-    display: none;
-    width: 100%;
-}
-.list .link{
-    display: block;
-    margin: 2vh auto;
-    width: 70%;
-    padding: 2vh 1vw;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-}
-.link_pdf{
-    width: auto;
-    color: #000;
-}
-.link .pdf{
-    position: relative;
-    width: 15%;
-    margin: auto;
-    margin-left: 1vw;
-}
-.list .actived{
-    background-color: #adadad;
-    color: #fff;
-    border-radius: 10px;
-}
-/* .list a button{
-    width: 100%;
-    height: 100%;
-} */
-.title{
+    transition: 0.5s;
+}.title{
     text-align: center;
     margin: auto;
     color: gray;
@@ -150,40 +78,15 @@ table tr:hover{
 table td{
     padding: 2vh 2vw;
 }
+table td a{
+    text-decoration: none;
+    color: black;
+}
+table tr:hover a{
+    color: #fff;
+}
 table .even{
     background-color: rgb(201, 204, 216);
 }
-.pagination{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    margin: 3vh auto;
-}
-.pagination li{
-    margin: 2vh 0.4vw;
-    padding: 1vh 1vw;
-    border: 1px solid #2a2a38;
-    border-radius: 50px;
-}
-.pagination li:hover{
-    background-color: #2b304b;
-}
-.pagination li:hover a{
-    color: #ffffff;
-}
-.pagination .active{
-    background-color: #020625;
-    box-shadow: 0px 0px 8px #414452;
-}
-.pagination .active:hover{
-    background-color: #020625;
-}
-.pagination .active a{
-    color: #ffffff;
-}
-.pagination li a{
-    text-decoration: none;
-    color: #000;
-}
+
 table{width:90%;height:auto;cellpadding : 5px;}</style>

@@ -54,7 +54,7 @@ class AuthLog extends Model
             session.type,
             COALESCE(CONCAT(personnes.nom," ",personnes.prenoms),"unknown") as user'
         );
-        //  $this->from("session");
+        
         $this->join('dhcp', "session.hostname = dhcp.ip",'left');
         $this->join('machine_etudiants', 'dhcp.id_machine_etudiant = machine_etudiants.id_machine','left');
         $this->join('inscription', 'machine_etudiants.id_inscription = inscription.id_inscription','left');
@@ -63,5 +63,14 @@ class AuthLog extends Model
 
         return $this;
     }
-    
+
+    public function is_saved($hostname): bool{
+        $this->builder()->select('session.hostname');
+        $this->join('dhcp', "session.hostname = dhcp.ip",'inner');
+
+        $result = $this->where("hostname",$hostname)->get()->getResultArray();
+
+        if(count($result) > 0) return true;
+        else return false;
+    }
 }

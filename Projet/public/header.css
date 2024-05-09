@@ -1,0 +1,25 @@
+.barre_nav{
+    margin: 0;
+    position: fixed;
+    height: 15%;
+    display: flex;
+    background-color: #fff;
+    width: 90%;
+    transition: 0.2s;
+}
+form{
+    padding: 3vh 1vw;
+    padding-left: 0;
+}
+form input, form select, form button{
+    /* width: 15%; */
+    margin: 1vh 0.5vw;
+    padding: 1vh 1vw;
+    border-radius: 50px;
+    border: 1px solid rgb(138, 138, 138);
+}
+form .actu{
+    width: 15%;
+    /* border: solid; */
+    text-decoration: none;
+}

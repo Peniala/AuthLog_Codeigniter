@@ -31,15 +31,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stat.css">    
+    <link rel="stylesheet" href="side_bar.css"> 
+    <link rel="stylesheet" href="stat.css"> 
     <title>My Calendar</title>
 </head>
 <body>
-    
-    
     <div class="container">
         <section class="stat">
-            <h3><?php if(isset($data[0]))echo $data[0]['nom']." ".$data[0]['prenoms']; else echo "Unknown"?></h3>
+            <h3><?php if(isset($data[0]['nom']))echo $data[0]['nom']." ".$data[0]['prenoms'].' - '.$data[0]['grade'].$data[0]['niveau']; else echo "Unknown"?></h3>
             <h2><span><?php if(isset($tab)) echo count($tab)."/" ?></span><?= date("t",mktime(0,0,0,$month,1,$year)) ?></h2>
         </section>
         <table class="calendar">
@@ -50,18 +49,12 @@
                         <nav class="barre_nav">
                             <form action="/PersonnalStat" method="GET">
                                 <select name="month" required>
-                                    <option value="01" <?php if(isset($month) && $month==1) echo "selected"?> >January</option>
-                                    <option value="02" <?php if(isset($month) && $month==2) echo "selected"?> >February</option>
-                                    <option value="03" <?php if(isset($month) && $month==3) echo "selected"?> >March</option>
-                                    <option value="04" <?php if(isset($month) && $month==4) echo "selected"?> >April</option>
-                                    <option value="05" <?php if(isset($month) && $month==5) echo "selected"?> >May</option>
-                                    <option value="06" <?php if(isset($month) && $month==6) echo "selected" ?> >June</option>
-                                    <option value="07" <?php if(isset($month) && $month==7) echo "selected" ?> >July</option>
-                                    <option value="08" <?php if(isset($month) && $month==8) echo "selected" ?> >August</option>
-                                    <option value="09" <?php if(isset($month) && $month==9) echo "selected" ?> >September</option>
-                                    <option value="10" <?php if(isset($month) && $month==10) echo "selected" ?> >October</option>
-                                    <option value="11" <?php if(isset($month) && $month==11) echo "selected" ?> >November</option>
-                                    <option value="12" <?php if(isset($month) && $month==12) echo "selected" ?> >December</option>
+                                <?php
+                                    foreach($ref as $i => $r){
+                                ?>
+                                    <option value="<?= $i;?>" <?php if(isset($month) && $month==$i) echo "selected"?> ><?= $r;?></option>
+                                <?php    }
+                                ?>
                                 </select>
                                 <input type="number" name="year" min="2023" <?php if(isset($year)) echo 'value="'.$year.'"'?>>
                                 <input type="hidden" name="user" placeholder="User" <?php if(isset($user)) echo 'value="'.$user.'"'; ?>>
@@ -119,7 +112,6 @@
         </div>
     </div>
     <script >
-        const barre_nav = document.querySelector(".barre_nav");
         const button_nav = document.querySelector(".button_nav");
         const image = document.querySelector("#image");
         const center = document.querySelector(".container");
@@ -130,9 +122,6 @@
         button_nav.addEventListener("click",()=>{
             if(list_nav.style.display === "block"){
                 center.style.width = "90%";
-                // barre_nav.style.width = "90%";
-                // barre_nav.style.height = "15%";
-                // barre_nav.style.textAlign = "left";
                 image.setAttribute("src","./bars.png");
                 list_nav.style.display = "none";
                 side_bar.style.backgroundColor = "#ececec";
@@ -141,9 +130,6 @@
             }
             else{
                 center.style.width = "80%";
-                // barre_nav.style.width = "80%";
-                // barre_nav.style.height = "18%";
-                // barre_nav.style.textAlign = "center";
                 image.setAttribute("src","./chevron-down.png");
                 list_nav.style.display = "block";
                 side_bar.style.backgroundColor = "#030838";
@@ -151,7 +137,6 @@
                 button_nav.style.backgroundColor = "#fff";
                 title.style.marginTop = "12%";
             }
-            // alert('click');
         });
     </script>
 </body>

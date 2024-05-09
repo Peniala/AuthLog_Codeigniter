@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connected</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./body.css">
+    <link rel="stylesheet" href="./table.css">
+    <link rel="stylesheet" href="./pagination.css">
+    <link rel="stylesheet" href="./side_bar.css">
 </head>
 <body>
     <section class="center">
@@ -40,9 +44,9 @@
                                     <?php 
                                         // if($i == 'date') echo "<td>".date('d-m-Y h:i:s',strtotime($col))."</td>";
                                         // else echo "<td>".$col."</td>";
-                                        echo "<td>".$row[$index]['nom']." ".$row[$index]['prenoms']."</td>";
-                                        echo "<td>".$row[$index]['grade']." ".$row[$index]['niveau']."</td>";
-                                        echo ($row[$index]['type']==null) ? "<td>disconnected</td>" : "<td>connected</td>";
+                                        echo "<td>".$row['nom']." ".$row['prenoms']."</td>";
+                                        echo "<td>".$row['grade'].$row['niveau']."</td>";
+                                        echo ($row['type']==null) ? "<td>disconnected</td>" : "<td>connected</td>";
                                     ?>
                                 </tr>
                     <?php endforeach ?>
@@ -62,7 +66,7 @@
         <div class="list">
             <a href="/Auth/export/1?date=<?= $date;?>&user=<?= $user;?>&page=<?= $page;?>" class="link link_pdf"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
             <a href="/Auth" class="link">View session</a>
-            <a href="/Connected" class="actived link">Dashboard</a>
+            <a href="/Dashboard" class="link">Dashboard</a>
         </div>
     </div>
     <script >
@@ -99,10 +103,6 @@
                 title.style.marginTop = "11%";
             }
             // alert('click');
-        });
-
-        window.addEventListener("onscroll",()=>{
-
         });
 
     </script>

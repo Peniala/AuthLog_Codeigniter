@@ -1,0 +1,57 @@
+.side_bar{
+    width: 10%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transition: 1s;
+    font-family: sans-serif;
+}
+.button_nav {
+    border: 1px solid #161e69;
+    margin: 5vh auto;
+    padding: 1vh 0.5vw;
+    border-radius: 50px;
+    width: 2.5vw;
+    height: 5vh;
+    display: block;
+    text-align: center;
+}
+.button_nav img{
+    width: 100%;
+    height: 100%;
+    color: #040b47;
+    transition: 2s;
+}
+.list{
+    display: none;
+    width: 100%;
+}
+.list .link{
+    display: block;
+    margin: 2vh auto;
+    width: 70%;
+    padding: 2vh 1vw;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+.link_pdf{
+    width: auto;
+    color: #000;
+}
+.link .pdf{
+    position: relative;
+    width: 15%;
+    margin: auto;
+    margin-left: 1vw;
+}
+.list .actived{
+    background-color: #adadad;
+    color: #fff;
+    border-radius: 10px;
+}
+/* .list a button{
+    width: 100%;
+    height: 100%;
+} */

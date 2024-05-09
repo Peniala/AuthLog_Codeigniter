@@ -27,8 +27,8 @@ class Auth extends BaseController
             'process' => $process,
             'type' => $type,
             'user' => $user,
-            'session' => $auth->getList()->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->groupStart()->like("nom",$user)->orLike("prenoms",$user)->groupEnd()->orderBy("date")->paginate(10),
-            // 'session' => $auth->getList()->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->like("user",$user)->paginate(10),
+            // 'session' => $auth->getList()->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->groupStart()->like("nom",$user)->orLike("prenoms",$user)->groupEnd()->orderBy("date")->paginate(10),
+            'session' => $auth->getList()->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->like("user",$user)->orderBy('date')->paginate(10),
             'pager' => $auth->pager
         ];
 
@@ -161,7 +161,7 @@ class Auth extends BaseController
         $end="</table>";	
         
         $width="table{width:90%;height:auto;cellpadding : 5px;}";
-        $css="<style>".file_get_contents("./style.css").$width."</style>";
+        $css="<style>".file_get_contents("./header.css").file_get_contents("./body.css").file_get_contents("./table.css").$width."</style>";
             
         $str=($cond==0)?$this->index():$this->connected(0);
 
@@ -174,6 +174,7 @@ class Auth extends BaseController
         
         // //generation du pdf
         
+        shell_exec("rm output.pdf");
         shell_exec("wkhtmltopdf http://projet.mit/tmp.html output.pdf");    
 
         header("Content-Type: application/pdf");
@@ -231,15 +232,17 @@ class Auth extends BaseController
         $date = $year."-".date("m",strtotime($year."-".$month));
         
         $model = new AuthLog();
-        $data = $model->getConnected($date)->where("hostname",$user)->findAll();
-        
+
+        if($model->is_saved($user)) $data = $model->getConnected($date)->where("hostname",$user)->findAll();
+        else $data = $model->like('date',$date)->where("hostname",$user)->findAll();
+
         $month = (int) $month;
         $year = (int) $year;
         $calendar = $this->generateCalendar($month,$year);
         $tab = $this->transformData($data);
         $this->mapCalendar($calendar,$tab);
 
-        $data = $model->getConnected("")->where("hostname",$user)->findAll();
+        // $data = $model->getConnected("")->where("hostname",$user)->findAll();
         
         $var = [
             "year" => (int) $year,
@@ -250,6 +253,7 @@ class Auth extends BaseController
             "data" => $data
         ];
 
+        // return '';
         return view("personnal_stat",$var);
     }
 

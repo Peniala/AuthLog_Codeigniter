@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    width: 100vw;
+    width: 100%;
     background-color: #ececec;
     position: absolute;
 }
@@ -19,25 +19,20 @@ form{
     width:100%;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 1vw;
 }
 form input, form button{
-    width: 80px;
     padding: 1vh 1vw;
     border-radius: 50px;
     border: 1px solid rgb(138, 138, 138);
 }
 form select{
-    /* width: 15%; */
-    /* margin: 1vh 0.5vw; */
-    width: 130px;
     padding: 1vh 1vw;
     border-radius: 50px;
     border: 1px solid rgb(138, 138, 138);
 }
 form .actu{
     width: 15%;
-    /* border: solid; */
     text-decoration: none;
 }
 .side_bar{
@@ -47,33 +42,26 @@ form .actu{
     height: 100%;
     transition: 1s;
 }
-.button_nav {
-    border: 1px solid #161e69;
-    margin: 5vh auto;
-    padding: 1vh 0.5vw;
-    border-radius: 50px;
-    width: 3vw;
-    height: 6vh;
-    display: block;
-    text-align: center;
-}
 .container{
     margin: 5% 0;
-    width:80%;
+    width:90%;
     display: flex;
     justify-content: space-evenly;
+    transition: 0.5s;
 }
 .container .calendar{
-    width:70%;
+    /* width: 56vw;
+    height: 56vh; */
     /* border-collapse: collapse; */
     border-radius: 10px;
     background-color: white;
     box-shadow: 1px 1px 5px 2px grey;
+    border: 15px solid transparent;
 }
 .container .calendar th, .container .calendar td{
     text-align: center;
-    height: 70px;
     color: rgb(136, 136, 136);
+    border: 5px solid #fff;
 }
 .container .calendar .title{
     color: #000;
@@ -86,6 +74,8 @@ form .actu{
     text-decoration: none;
 }
 .container .calendar td{
+    width: 6vw;
+    height: 6vw;
     font-size: 20px;
 }
 .container .calendar .none{
@@ -98,11 +88,12 @@ form .actu{
     background-color: rgb(185, 223, 255);
 }
 .stat{
-    width: 180px;
-    height: 180px;
+    width: 15vw;
+    height: 15vw;
     border-radius: 20px;
     background-color: white;
     box-shadow: 1px 1px 5px 2px grey;
+    text-overflow: clip;
 }
 .stat h3{
     margin: 10px;
@@ -117,57 +108,7 @@ form .actu{
     font-size: 40px;
     color: rgb(148, 255, 148);
 }
-.side_bar{
-    width: 10%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    transition: 1s;
-    background-color: #ececec;
-    font-family: sans-serif;
-}
 .button_nav {
-    border: 1px solid #161e69;
-    margin: 5vh auto;
-    padding: 1vh 0.5vw;
-    border-radius: 50px;
-    width: 2vw;
-    height: 4vh;
-    display: block;
-    text-align: center;
-}
-.button_nav img{
-    width: 90%;
-    height: 100%;
-    color: #040b47;
-    transition: 2s;
-}
-.list{
-    display: none;
-    width: 100%;
-}
-.list .link{
-    display: block;
-    margin: 2vh auto;
-    width: 70%;
-    padding: 2vh 1vw;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-}
-.link_pdf{
-    width: auto;
-    color: #000;
-}
-.link .pdf{
-    position: relative;
-    width: 15%;
-    margin: auto;
-    margin-left: 1vw;
-}
-.list .actived{
-    background-color: #adadad;
-    color: #fff;
-    border-radius: 10px;
+    width: 1.5vw;
+    height: 3vh;;
 }

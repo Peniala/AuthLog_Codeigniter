@@ -1,0 +1,43 @@
+.title{
+    text-align: center;
+    margin: auto;
+    color: gray;
+    margin-top: 8%;
+    padding: 3vw;
+    transition: 0.5s;
+}
+table{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 3vh;
+    border-collapse: collapse;
+    border-spacing: 5vw;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+table tr{
+    border: 1px solid #464141;
+}
+table tr:nth-child(1){
+    background-color: #040b47;
+    color: #ffffff;
+}
+table tr:hover{
+    background-color: #161e69;
+    color: #ffffff;
+}
+table td{
+    padding: 2vh 2vw;
+}
+table td a{
+    text-decoration: none;
+    color: black;
+}
+table tr:hover a{
+    color: #fff;
+}
+table .even{
+    background-color: rgb(201, 204, 216);
+}
+

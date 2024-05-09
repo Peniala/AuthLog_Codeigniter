@@ -4,48 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="./style.css">
-    <style>
-        /* *{
-            border: solid;
-        } */
-        .barre_nav{
-            margin: 0;
-            position: fixed;
-            height: 15%;
-            display: flex;
-            background-color: #fff;
-            width: 50%;
-            transition: 0.2s;
-        }
-        .charts{
-            margin-top: 3%; 
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            align-content: center;
-        }
-        .license, .master{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-        }
-        .pie{
-            margin: 15% 5% 0 10%;
-            width: 75%;
-            height: auto;
-            text-align: center;
-        }
-        .levels{
-            margin-top:5%;
-        }
-        .bars{
-            width: 80%;
-        }
-        h4{
-            color: #888;
-            text-align: center;
-            margin: 1vw 1vh;
-        }
-    </style>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./body.css">
+    <link rel="stylesheet" href="./table.css">
+    <link rel="stylesheet" href="./pagination.css">
+    <link rel="stylesheet" href="./side_bar.css">
+    <link rel="stylesheet" href="./chart.css">
 </head>
 <body>
     <nav class="barre_nav">
@@ -85,13 +49,14 @@
                 </div>
             </div>
         </div>
+        <a href="/Connected" style="padding: 2vw;">View lists of connection</a>
     </section>
     <div class="side_bar">
         <div class="button_nav">
             <img src="./bars.png" alt="Bars" id="image">
         </div>
         <div class="list">
-            <a href="/Auth/export/1?date=<?= $date;?>" class="link link_pdf"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
+            <!-- <a href="/Auth/export/1?date=<?= $date;?>" class="link link_pdf"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a> -->
             <a href="/Auth" class="link">View session</a>
             <a href="/Dashboard" class="actived link">Dashboard</a>
         </div>
@@ -200,10 +165,6 @@
                 title.style.marginTop = "12%";
             }
             // alert('click');
-        });
-
-        window.addEventListener("onscroll",()=>{
-
         });
 
     </script>
