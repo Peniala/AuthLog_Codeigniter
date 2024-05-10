@@ -16,7 +16,7 @@
         <form action="/Dashboard">
             <input type="date" name="date" id="" <?php if(isset($date)) echo "value=\"".$date."\"" ?> >
             <button type="submit">Search</button>
-            <a href="/Auth/actualize?date=<?= $date;?>&p=/Dashboard" class="actu"><button type="button">Actualize</button></a>
+            <a href="/Auth/actualize?date=<?= $date;?>&p=Dashboard" class="actu"><button type="button">Actualize</button></a>
         </form>
     </nav>
     <section class="center charts">

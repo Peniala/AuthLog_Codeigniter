@@ -100,6 +100,7 @@ class Auth extends BaseController
         $t=(isset($_GET['type']))?$_GET['type']:null;
         $pr=(isset($_GET['process']))?$_GET['process']:null;
         $u=(isset($_GET['user']))?$_GET['user']:null;
+        $l=(isset($_GET['level']))?$_GET['level']:null;
         $p=(isset($_GET['page']))?$_GET['page']:1;
 
         $all=fopen("/var/log/auth.log","r");
@@ -138,6 +139,8 @@ class Auth extends BaseController
             'Des'=>'12',
         );
 
+        // echo $lastDate;
+
         while($line=fgets($all)){
             $year=date('Y',time());
             $moisDate=date('m',time());
@@ -145,7 +148,7 @@ class Auth extends BaseController
                 sscanf($line,"%[^ ] %[^ ] %[^ ] %[^ ] %[^:]: %*[^ ] session %[^ ] for user %[^\n]",$mois,$jour,$heure,$hostname,$process,$typeSession,$user);
                 if(strcmp($typeSession,"opened")==0){
                     $tmp=explode(" ",$user);
-                    $user=explode("(",$tmp[0]);
+                    $user=explode("(",$tmp[0])[0];
                 }
 
                 if(strcmp($mois,"Dec")==0 && strcmp($moisDate,"Jan")==0){
@@ -159,19 +162,30 @@ class Auth extends BaseController
                     'type'=>$typeSession,
                     'user'=>$user,
                 );	
+                // echo $data[$i]['date'].' '.$user.' <br>';
                 
                 if($data[$i]['date'] > $lastDate && $data[$i]['user']!="root" && $data[$i]['user']!="gdm"){
                     $auth->insert($data[$i]);
+                    
+                    // print_r($data[$i])."<br>";
                 }    
 
                 $i++;
             }
         }
         fclose($all);
+
         $page = $this->request->getVar("p");
         if($page == null) $page = "Auth";
 
-        if(isset($page)) return redirect()->to($page."?date=".$d."&hostname=".$h."&type=".$t."&process=".$pr."&user=".$u."&page=".$p);
+        /// ovaina fa misy erreur
+
+        echo $page;
+        if(isset($page)){
+            if($page == 'Dashboard') return redirect()->to($page."?date=".$d);
+            else  if($page == '/Connected') return redirect()->to($page."?date=".$d."&level=".$l."&user=".$u."&page=".$p);
+            else return redirect()->to($page."?date=".$d."&hostname=".$h."&type=".$t."&process=".$pr."&user=".$u."&page=".$p);
+        }
         else return redirect()->to($page);
 
     }

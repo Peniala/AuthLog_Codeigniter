@@ -17,18 +17,18 @@
                 <input type="date" name="date" id="" <?php if(isset($date)) echo "value=\"".$date."\"" ?> >
                 <select name="level" id="" >
                     <option value="">All</option>
-                    <option value="Li2" <?php if(isset($l) && $l === "Li2") echo "selected" ?>>L2</option>
-                    <option value="Li1" <?php if(isset($l) && $l === "Li1") echo "selected" ?>>L1</option>
-                    <option value="Li3" <?php if(isset($l) && $l === "Li3") echo "selected" ?>>L3</option>
-                    <option value="Mi1" <?php if(isset($l) && $l === "Mi1") echo "selected" ?>>M1</option>
-                    <option value="Mi2" <?php if(isset($l) && $l === "Mi2") echo "selected" ?>>M2</option>
+                    <option value="Li2" <?php if(isset($level) && $level === "Li2") echo "selected" ?>>L2</option>
+                    <option value="Li1" <?php if(isset($level) && $level === "Li1") echo "selected" ?>>L1</option>
+                    <option value="Li3" <?php if(isset($level) && $level === "Li3") echo "selected" ?>>L3</option>
+                    <option value="Mi1" <?php if(isset($level) && $level === "Mi1") echo "selected" ?>>M1</option>
+                    <option value="Mi2" <?php if(isset($level) && $level === "Mi2") echo "selected" ?>>M2</option>
                 </select>
                 <!-- <input type="checkbox" name="opened" id=""><label>Opened</label>
                 <input type="checkbox" name="closed" id=""><label>Closed</label> -->
                 <input type="text" placeholder="User" name="user" <?php if(isset($user)) echo "value=\"".$user."\"" ?>>
                 
                 <button type="submit">Search</button>
-                <a href="/Auth/actualize?date=<?= $date;?>&user=<?= $user;?>&page=<?= $page;?>&p=/Connected" class="actu"><button type="button">Actualize</button></a>
+                <a href="/Auth/actualize?date=<?= $date;?>&level=<?= $level;?>&user=<?= $user;?>&page=<?= $page;?>&p=/Connected" class="actu"><button type="button">Actualize</button></a>
             </form>
         </nav>
         <h1 class="title">Connected on <?php echo $date ?></h1>
