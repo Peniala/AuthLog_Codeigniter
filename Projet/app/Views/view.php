@@ -72,7 +72,7 @@
             <a href="Auth/export/0?date=<?= $date;?>&hostname=<?= $hostname;?>&type=<?= $type;?>&process=<?= $process;?>&user=<?= $user;?>&page=<?= $page;?>" class="link link_pdf" target="_blank"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
             <a href="Auth" class="actived link">View session</a>
             <a href="/Dashboard" class="link">Dashboard</a>
-            <!-- <a href='/deconnexion' class="link">deconnexion</a> -->
+            <a href='/deconnexion' class="link">Log out</a>
         </div>
     </div>
     <script >

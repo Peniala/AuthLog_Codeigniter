@@ -2,10 +2,25 @@
 
 namespace App\Controllers;
 use App\Models\AuthLog;
+// use App\Controllers\UserController;
 
 class Auth extends BaseController
 {
-    public function index(): string{
+    // private $s;
+    // public function __construct() {
+    //     $this->s = new \App\Controllers\UserController();
+    // }
+    public function index(){
+        // $this->s->accueil();
+
+        ////////////// Session utilisateur /////////////////
+
+        $s = \Config\Services::session();
+        $data = $s->get('UserConnecter');
+        if($data == null) return redirect()->to('/');
+
+        ////////////////////////////////////////////////////
+        
         $auth = new AuthLog();
 
         $session = [];
@@ -37,6 +52,14 @@ class Auth extends BaseController
 
     public function connected($cond=0):string
     {
+        ////////////// Session utilisateur /////////////////
+
+        $s = \Config\Services::session();
+        $data = $s->get('UserConnecter');
+        if($data == null) return redirect()->to('/');
+
+        ////////////////////////////////////////////////////
+
         $auth = new AuthLog();
 	
         $session = [];
@@ -59,7 +82,6 @@ class Auth extends BaseController
             'page' => $page,
             'level' => $l,
             'session' => ($cond==0) ? $auth->like('inscription.grade',$level[0])->like('inscription.niveau',$level[1])->groupStart()->like('personnes.nom',$user)->orlike('personnes.prenoms',$user)->groupEnd()->getConnected($date)->paginate(10) : $auth->getConnected($date)->findAll(),
-            // 'session' => $auth->getConnected($date)->findAll(),
             'pager' => $auth->getConnected($date)->pager,
 	        'cond' => $cond		
 	];
@@ -160,16 +182,19 @@ class Auth extends BaseController
         $start="<table>";
         $end="</table>";	
         
-        $width="table{width:90%;height:auto;cellpadding : 5px;}";
+        $width="table{width:90%;height:auto;cellpadding : 5px;} table td{padding:2px;}";
         $css="<style>".file_get_contents("./header.css").file_get_contents("./body.css").file_get_contents("./table.css").$width."</style>";
-            
-        $str=($cond==0)?$this->index():$this->connected(0);
+           
+        if($cond == 0) $this->index();
+        else if($cond == 1) $str = $this->connected(0);
+        else $str = $this->connected(1);
 
         $indStart=strpos($str,$start);
         $indEnd=strpos($str,$end);	
 
         $html=substr($str,$indStart,$indEnd-$indStart+strlen($end));
 
+        $html = utf8_decode($html);
         file_put_contents("./tmp.html",$html.$css);
         
         // //generation du pdf
@@ -187,8 +212,16 @@ class Auth extends BaseController
         //return "";
     }
     
-    public function generateChart():string
+    public function generateChart()
     {
+        ////////////// Session utilisateur /////////////////
+
+        $s = \Config\Services::session();
+        $data = $s->get('UserConnecter');
+        if($data == null) return redirect()->to('/');
+
+        ////////////////////////////////////////////////////
+
         $auth = new AuthLog();
 	
         $stat = [];
@@ -212,22 +245,36 @@ class Auth extends BaseController
         return view('chart',$stat);
     }
     
-    public function personnalStat(): string
+    public function personnalStat($index = 0)
     {
-        $month = $this->request->getVar("month");
-        $year = $this->request->getVar("year");
+        ////////////// Session utilisateur /////////////////
+
+        $s = \Config\Services::session();
+        $data = $s->get('UserConnecter');
+        if($data == null) return redirect()->to('/');
+
+        ////////////////////////////////////////////////////
+
+        $month = (int) $this->request->getVar("month");
+        $year = (int) $this->request->getVar("year");
         $user = $this->request->getVar("user");
+
+        $year += (int) (($month-1)/12);
+        $month = $month%12;
+        if($month == 0) $month = 12;
 
         $var = [
             "year" => (int) $year,
             "month" => (int) $month,
             "user" => $user,
-            "test" => "Tsisy"
+            "index" => $index
         ];
 
         if($month == null) $month = date("m");
         if($year == null) $year = date("Y");
         if($user == null) return view("personnal_stat",$var);
+
+        
 
         $date = $year."-".date("m",strtotime($year."-".$month));
         
@@ -242,6 +289,10 @@ class Auth extends BaseController
         $tab = $this->transformData($data);
         $this->mapCalendar($calendar,$tab);
 
+        // print_r($data);
+
+        if($model->is_saved($user)) $data = $model->getConnected("")->where("hostname",$user)->findAll();
+        else $data = $model->like('date',"")->where("hostname",$user)->findAll();
         // $data = $model->getConnected("")->where("hostname",$user)->findAll();
         
         $var = [
@@ -250,10 +301,10 @@ class Auth extends BaseController
             "user" => $user,
             "calendar" => $calendar,
             "tab" => $tab,
-            "data" => $data
+            "data" => $data,
+            "index" => $index
         ];
 
-        // return '';
         return view("personnal_stat",$var);
     }
 
@@ -314,5 +365,92 @@ class Auth extends BaseController
                 if(isset($data[$day["value"]]) && $day["state"] != 2) $day["state"] = 1;
             }
         }
+    }
+
+    public function exportCalendar():string{
+        //generation de l'html a exporter
+        
+        $start="<section class=\"container\">";
+        $end="</section>";	
+        
+        $css="<head><style>".file_get_contents("./stat_pdf.css")."</style></head>";
+        
+        $str=$this->personnalStat(1);
+
+        $indStart=strpos($str,$start);
+        $indEnd=strpos($str,$end);	
+
+        $html=substr($str,$indStart,$indEnd-$indStart+strlen($end));
+
+        $pdf = "<html>".$css."<body>".$html."</body>"."</html>";
+        $pdf = utf8_decode($pdf);
+
+        file_put_contents("./tmp.html",$pdf);
+        
+        // //generation du pdf
+        
+        shell_exec("rm output.pdf");
+        shell_exec("wkhtmltopdf http://projet.mit/tmp.html output.pdf");    
+
+        header("Content-Type: application/pdf");
+        header("Content-Disposition: attachment;filename=output.pdf");
+        header("Content-Length: ".filesize("output.pdf"));    
+    
+        readfile("output.pdf");
+
+        //  return $html.$css;
+        return "";
+    }
+
+
+    public function exportChart():string{
+        //generation de l'html a exporter
+       
+        /// css
+        $css="<head><style>".file_get_contents("./chart.css")."</style></head>";
+
+        /// html
+        $start="<section class=\"center charts\">";
+        $end="</section>";	
+        
+        $str=$this->generateChart();
+
+        $indStart=strpos($str,$start);
+        $indEnd=strpos($str,$end);	
+
+        $html=substr($str,$indStart,$indEnd-$indStart+strlen($end));
+
+        /// js
+
+        $start="<script>";
+        $end="</script>";	
+        
+        $str=$this->generateChart();
+
+        $indStart=strpos($str,$start);
+        $indEnd=strpos($str,$end);	
+
+        $js=substr($str,$indStart,$indEnd-$indStart+strlen($end));
+
+        $js = "<script src=\"../chart.js-4.4.2/package/dist/chart.umd.js\">".$js;
+
+        $pdf = "<html>".$css."<body>".$html.$js."</body>"."</html>";
+        $pdf = utf8_decode($pdf);
+
+        file_put_contents("./tmp.html",$pdf);
+        
+        // //generation du pdf
+        
+        shell_exec("rm output.pdf");
+        shell_exec("wkhtmltopdf http://projet.mit/tmp.html output.pdf");    
+
+        header("Content-Type: application/pdf");
+        header("Content-Disposition: attachment;filename=output.pdf");
+        header("Content-Length: ".filesize("output.pdf"));    
+    
+        readfile("output.pdf");
+
+        //  return $html.$css;
+        return "";
     }
 }   

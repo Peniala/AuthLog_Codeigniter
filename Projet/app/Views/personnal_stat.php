@@ -32,37 +32,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="side_bar.css"> 
-    <link rel="stylesheet" href="stat.css"> 
+    <link rel="stylesheet" href="stat.css">
     <title>My Calendar</title>
 </head>
 <body>
-    <div class="container">
-        <section class="stat">
-            <h3><?php if(isset($data[0]['nom']))echo $data[0]['nom']." ".$data[0]['prenoms'].' - '.$data[0]['grade'].$data[0]['niveau']; else echo "Unknown"?></h3>
+    <section class="container">
+        <div class="stat">
+            <h3><?php if(isset($data[0]['nom'])) echo $data[0]['nom']." ".$data[0]['prenoms'].' - '.$data[0]['grade'].$data[0]['niveau']; else echo "Unknown"?></h3>
             <h2><span><?php if(isset($tab)) echo count($tab)."/" ?></span><?= date("t",mktime(0,0,0,$month,1,$year)) ?></h2>
-        </section>
+        </div>
         <table class="calendar">
             <thead>
                 <tr>
-                    <th><a class="nav" href="/PersonnalStat?user=<?=$user?>&year=<?=$prevYear?>&month=<?=$prevMonth?>"><</a></th>
+                    <th><?php if($index == 0): ?><a class="nav" href="/PersonnalStat?user=<?=$user?>&year=<?=$prevYear?>&month=<?=$prevMonth?>"><</a><?php endif ?></th>
                     <th class="title" colspan="5">
                         <nav class="barre_nav">
-                            <form action="/PersonnalStat" method="GET">
-                                <select name="month" required>
-                                <?php
-                                    foreach($ref as $i => $r){
-                                ?>
-                                    <option value="<?= $i;?>" <?php if(isset($month) && $month==$i) echo "selected"?> ><?= $r;?></option>
-                                <?php    }
-                                ?>
-                                </select>
-                                <input type="number" name="year" min="2023" <?php if(isset($year)) echo 'value="'.$year.'"'?>>
-                                <input type="hidden" name="user" placeholder="User" <?php if(isset($user)) echo 'value="'.$user.'"'; ?>>
-                                <button>Show</button>
-                            </form>
+                            <?php if($index == 0): ?>
+                                <form action="/PersonnalStat" method="GET">
+                                    <select name="month" required>
+                                    <?php
+                                        foreach($ref as $i => $r){
+                                    ?>
+                                        <option value="<?= $i;?>" <?php if(isset($month) && $month==$i) echo "selected"?> ><?= $r;?></option>
+                                    <?php    }
+                                    ?>
+                                    </select>
+                                    <input type="number" name="year" min="2023" <?php if(isset($year)) echo 'value="'.$year.'"'?>>
+                                    <input type="hidden" name="user" placeholder="User" <?php if(isset($user)) echo 'value="'.$user.'"'; ?>>
+                                    <button>Show</button>
+                                </form>
+                            <?php endif ?>
+                            <?php if($index == 1): ?>
+                                <form action=""><h1> <?= $ref[$month]." ".$year ?> </h1></form>
+                            <?php endif ?>
                         </nav>
                     </th>
-                    <th><a class="nav" href="/PersonnalStat?user=<?=$user?>&year=<?=$nextYear?>&month=<?=$nextMonth?>">></a></th>
+                    <th><?php if($index == 0): ?><a class="nav" href="/PersonnalStat?user=<?=$user?>&year=<?=$nextYear?>&month=<?=$nextMonth?>">></a><?php endif ?></th>
                 </tr>
                 <tr>
                     <th>Lun</th>
@@ -100,17 +105,19 @@
                 <?php endif ?>
             </tbody>
         </table>
-    </div>
+    </section>
     <div class="side_bar">
         <div class="button_nav">
             <img src="./bars.png" alt="Bars" id="image">
         </div>
         <div class="list">
-            <a href="Auth/export/0?date=<?= $year."-".$month;?>&hostname=<?= $user;?>" class="link link_pdf" target="_blank"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
+            <a href="Auth/exportCalendar?year=<?= $year."&month=".$month;?>&user=<?= $user;?>" class="link link_pdf" target="_blank"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
             <a href="Auth" class="link">View session</a>
             <a href="/Dashboard" class="link">Dashboard</a>
+            <a href='/deconnexion' class="link">Log out</a>
         </div>
     </div>
+
     <script >
         const button_nav = document.querySelector(".button_nav");
         const image = document.querySelector("#image");

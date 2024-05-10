@@ -1,92 +1,175 @@
-<table>
-                    <tr>
-                        <td>User</td>
-                        <td>Level</td>
-                        <td>Status</td>
-                    </tr>
-                                                    <tr class="even">
-                                    <td>RABEMANANJARA Tsito Marainafitahina</td><td>L 2</td><td>disconnected</td>                                </tr>
-                                                    <tr class="odd">
-                                    <td>RANDRIAMITANDRINA Tsiory Fanambinana</td><td>L 2</td><td>disconnected</td>                                </tr>
-                                                    <tr class="even">
-                                    <td>RANDRIANANTENAINA Hajatiana Michelas</td><td>L 2</td><td>disconnected</td>                                </tr>
-                                                    <tr class="odd">
-                                    <td>RANDRIAMAROTIA Fanirilalaina Ambinintsoanavalona Johan Adrien</td><td>L 2</td><td>connected</td>                                </tr>
-                                        
-                </table><style>.barre_nav{
+<html><head><style>.barre_nav{
     margin: 0;
     position: fixed;
     height: 15%;
     display: flex;
     background-color: #fff;
-    width: 90%;
+    width: 50%;
     transition: 0.2s;
 }
-form{
-    padding: 3vh 1vw;
-    padding-left: 0;
+.charts{
+    margin-top: 3%; 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: center;
 }
-form input, form select, form button{
-    /* width: 15%; */
-    margin: 1vh 0.5vw;
-    padding: 1vh 1vw;
-    border-radius: 50px;
-    border: 1px solid rgb(138, 138, 138);
+.license, .master{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
-form .actu{
-    width: 15%;
-    /* border: solid; */
-    text-decoration: none;
-}*{
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body{
-    display: flex;
-    font-family: sans-serif;
-}
-.center{
-    width: 90%;
-    transition: 0.5s;
-}.title{
+.pie{
+    margin: 15% 5% 0 10%;
+    width: 75%;
+    height: auto;
     text-align: center;
-    margin: auto;
-    color: gray;
-    margin-top: 8%;
 }
-table{
+.levels{
+    margin-top:5%;
+}
+.bars{
     width: 80%;
+}
+h4{
+    color: #888;
     text-align: center;
-    margin: auto;
-    margin-top: 3vh;
-    border-collapse: collapse;
-    border-spacing: 5vw;
-    font-family: sans-serif;
-}
-table tr{
-    border: 1px solid #464141;
-}
-table tr:nth-child(1){
-    background-color: #040b47;
-    color: #ffffff;
-}
-table tr:hover{
-    background-color: #161e69;
-    color: #ffffff;
-}
-table td{
-    padding: 2vh 2vw;
-}
-table td a{
-    text-decoration: none;
-    color: black;
-}
-table tr:hover a{
-    color: #fff;
-}
-table .even{
-    background-color: rgb(201, 204, 216);
-}
+    margin: 1vw 1vh;
+}</style></head><body><section class="center charts">
+        <div class="pie">
+            <canvas id="global"></canvas>
+        </div>
+        <div class="levels">
+            <div class="license">
+                <div class="bars">
+                    <h4>License 1</h4>
+                    <canvas id="l1Chart"></canvas>
+                </div>
+                <div class="bars">
+                    <h4>License 2</h4>
+                    <canvas id="l2Chart"></canvas>
+                </div>
+                <div class="bars">
+                    <h4>License 3</h4>
+                    <canvas id="l3Chart"></canvas>
+                </div>
+            </div>
+            <div class="master">
+                <div class="bars">
+                    <h4>Master 1</h4>
+                    <canvas id="m1Chart"></canvas>
+                </div>
+                <div class="bars">
+                    <h4>Master 2</h4>
+                    <canvas id="m2Chart"></canvas>
+                </div>
+            </div>
+        </div>
+        <a href="/Connected?date=2024-05-02" style="padding: 2vw;">View lists of connection</a>
+    </section><script src="../chart.js-4.4.2/package/dist/chart.umd.js"><script>
+        const globalChart = document.getElementById('global');
+        const l1Chart = document.getElementById('l1Chart');
+        const l2Chart = document.getElementById('l2Chart');
+        const l3Chart = document.getElementById('l3Chart');
+        const m1Chart = document.getElementById('m1Chart');
+        const m2Chart = document.getElementById('m2Chart');
 
-table{width:90%;height:auto;cellpadding : 5px;}</style>
+        new Chart(globalChart, {
+            type: 'pie',
+            data: {
+                labels: ['Connected','Not connected'],
+                datasets: [{
+                    label: 'personnes',
+                    backgroundColor:['#471696','#aaa1d8'],
+                    data: [4,108]
+                }]
+            }
+        });
+        new Chart(l1Chart, {
+            type: 'bar',
+            data: {
+                labels: ['Connected','Not connected'],
+                datasets: [{
+                    backgroundColor:['#00977e','#fc844d'],
+                    data: [2,70]
+                }]
+            }
+        });
+        new Chart(l2Chart, {
+            type: 'bar',
+            data: {
+                labels: ['Connected','Not connected'],
+                datasets: [{
+                    backgroundColor:['#109754','#f7693e'],
+                    data: [2,38]
+                }]
+            }
+        });
+        new Chart(l3Chart, {
+            type: 'bar',
+            data: {
+                labels: ['Connected','Not connected'],
+                datasets: [{
+                    backgroundColor:['#36506d','#e22626'],
+                    data: [0,0]
+                }]
+            }
+        });
+        new Chart(m1Chart, {
+            type: 'bar',
+            data: {
+                labels: ['Connected','Not connected'],
+                datasets: [{
+                    backgroundColor:['#0d1094','#df0303'],
+                    data: [0,0]
+                }]
+            }
+        });
+        new Chart(m2Chart, {
+            type: 'bar',
+            data: {
+                labels: ['Connected','Not connected'],
+                datasets: [{
+                    backgroundColor:['#1e21da','#ff0000'],
+                    data: [0,0]
+                }]
+            }
+        });
+
+        const barre_nav = document.querySelector(".barre_nav");
+        const button_nav = document.querySelector(".button_nav");
+        const image = document.querySelector("#image");
+        const center = document.querySelector(".center");
+        const list_nav = document.querySelector(".list");
+        const side_bar = document.querySelector(".side_bar");
+        const title = document.querySelector(".title");
+
+        button_nav.addEventListener("click",()=>{
+            if(list_nav.style.display === "block"){
+                center.style.width = "90%";
+                barre_nav.style.width = "35%";
+                // barre_nav.style.height = "15%";
+                barre_nav.style.textAlign = "left";
+                image.setAttribute("src","./bars.png");
+                list_nav.style.display = "none";
+                side_bar.style.backgroundColor = "#fff";
+                side_bar.style.width = "10%";
+                title.style.marginTop = "8%";
+            }
+            else{
+                center.style.width = "80%";
+                barre_nav.style.width = "35%";
+                // barre_nav.style.height = "18%";
+                barre_nav.style.textAlign = "center";
+                image.setAttribute("src","./chevron-down.png");
+                list_nav.style.display = "block";
+                side_bar.style.backgroundColor = "#030838";
+                side_bar.style.width = "20%";
+                button_nav.style.backgroundColor = "#fff";
+                title.style.marginTop = "12%";
+            }
+            // alert('click');
+        });
+
+    </script>
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 2 APPPATH/Views/chart.php</body></html>

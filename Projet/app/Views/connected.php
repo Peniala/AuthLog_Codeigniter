@@ -64,9 +64,11 @@
             <img src="./bars.png" alt="Bars" id="image">
         </div>
         <div class="list">
-            <a href="/Auth/export/1?date=<?= $date;?>&user=<?= $user;?>&page=<?= $page;?>" class="link link_pdf"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
+            <a href="/Auth/export/1?date=<?= $date;?>&user=<?= $user;?>&page=<?= $page;?>" class="link link_pdf"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to pdf</a>
+            <a href="/Auth/export/2?date=<?= $date;?>&user=<?= $user;?>&page=<?= $page;?>" class="link link_pdf"><img class="pdf" src="file-pdf.png" alt="PDF"> Export all to pdf</a>
             <a href="/Auth" class="link">View session</a>
             <a href="/Dashboard" class="link">Dashboard</a>
+            <a href='/deconnexion' class="link">Log out</a>
         </div>
     </div>
     <script >

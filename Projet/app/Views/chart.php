@@ -49,20 +49,51 @@
                 </div>
             </div>
         </div>
-        <a href="/Connected" style="padding: 2vw;">View lists of connection</a>
+        <a class="redirect" href="/Connected?date=<?= $date ?>" style="padding: 2vw;">View lists of connection</a>
     </section>
     <div class="side_bar">
         <div class="button_nav">
             <img src="./bars.png" alt="Bars" id="image">
         </div>
         <div class="list">
-            <!-- <a href="/Auth/export/1?date=<?= $date;?>" class="link link_pdf"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a> -->
+            <a href="#" onClick="printChart()" class="link link_pdf"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
             <a href="/Auth" class="link">View session</a>
             <a href="/Dashboard" class="actived link">Dashboard</a>
+            <a href='/deconnexion' class="link">Log out</a>
         </div>
     </div>
+    <script>
+        function printChart(){
+            const bar = document.querySelector(".side_bar");
+            const center = document.querySelector(".center");
+            const pie = document.querySelector(".pie");
+            const link = document.querySelector("form a");
+            const button = document.querySelector("form button");
+            const redirect = document.querySelector(".redirect");
+
+            bar.style.display = "none";
+            link.style.display = "none";
+            button.style.display = "none";
+            redirect.style.display = "none";
+            center.style.width = "100%";
+            center.style.marginTop = "5%";
+            pie.style.marginTop = "13%";
+
+            window.print();
+
+            bar.style.display = "block";
+            link.style.display = "inline";
+            button.style.display = "inline";
+            redirect.style.display = "inline";
+            center.style.width = "80%";
+            center.style.marginTop = "3%";
+            pie.style.marginTop = "15%";
+        }
+    </script>
     <script src="../chart.js-4.4.2/package/dist/chart.umd.js"></script>
     <script>
+        
+
         const globalChart = document.getElementById('global');
         const l1Chart = document.getElementById('l1Chart');
         const l2Chart = document.getElementById('l2Chart');

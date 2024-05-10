@@ -34,7 +34,7 @@ const login = async() => {
         data => {
             if(HTTP_STATUS_CODE == 200) {
           // ito no ovaina rehefa tiana anao redirection makany am page d'accueil
-                window.location.href = '/accueil';
+                window.location.href = '/Auth';
             } else {
                 p_text.innerText = data.status;
                 popup.style.display = 'block';    

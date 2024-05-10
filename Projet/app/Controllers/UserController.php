@@ -21,11 +21,9 @@ class UserController extends BaseController {
   public function accueil() {
     $s = \Config\Services::session();
     $data = $s->get('UserConnecter');
-    if($data == null) {
-      return redirect()->route('/');
-    }
+    if($data == null) return redirect()->to('/');
 
-    redirect()->to("http://projet.mit/Auth/index");
+    // redirect()->to("/Auth");
     // return view('view', ['data' => $data]);
   }
   public function qrConnexion() {
