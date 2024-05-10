@@ -103,9 +103,9 @@ try{
     /// Destinataire
 
     $mail->setFrom('pranaivo@mit-ua.mg');
-    $mail->addReplyTo('pranaivo@mit-ua.mg');
+    $mail->addReplyTo('filamatra@mit-ua.mg');
 
-    $mail->addAddress('pranaivo@mit-ua.mg');
+    $mail->addAddress('filamatra@mit-ua.mg');
 
     /// Rattacher un fichier
 
