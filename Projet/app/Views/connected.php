@@ -83,29 +83,24 @@
         button_nav.addEventListener("click",()=>{
             if(list_nav.style.display === "block"){
                 center.style.width = "90%";
-                barre_nav.style.width = "90%";
-                barre_nav.style.height = "15%";
-                barre_nav.style.textAlign = "left";
                 image.setAttribute("src","./bars.png");
                 list_nav.style.display = "none";
-                side_bar.style.backgroundColor = "#fff";
+                side_bar.style.backgroundColor = "transparent";
                 side_bar.style.width = "10%";
-                title.style.marginTop = "8%";
             }
             else{
-                center.style.width = "80%";
-                barre_nav.style.width = "80%";
-                barre_nav.style.height = "18%";
-                barre_nav.style.textAlign = "center";
                 image.setAttribute("src","./chevron-down.png");
                 list_nav.style.display = "block";
                 side_bar.style.backgroundColor = "#030838";
-                side_bar.style.width = "20%";
+                side_bar.style.width = "300px";
                 button_nav.style.backgroundColor = "#fff";
-                title.style.marginTop = "11%";
             }
             // alert('click');
         });
+
+        // window.addEventListener("scroll",()=>{
+        //     barre_nav.style.top = "-20%";
+        // });
 
     </script>
 </body>

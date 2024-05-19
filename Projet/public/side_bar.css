@@ -6,14 +6,15 @@
     height: 100%;
     transition: 1s;
     font-family: sans-serif;
+    z-index: 30;
 }
 .button_nav {
     border: 1px solid #161e69;
     margin: 5vh auto;
-    padding: 1vh 0.5vw;
+    padding: 5px;
     border-radius: 50px;
-    width: 2.5vw;
-    height: 5vh;
+    width: 30px;
+    height: 30px;
     display: block;
     text-align: center;
 }
@@ -55,3 +56,5 @@
     width: 100%;
     height: 100%;
 } */
+
+

@@ -12,9 +12,11 @@ s.addEventListener('click' , e => {
     if(formData.get('nom') == '' || formData.get('prenom') == '' || formData.get('password') == ''){
         p_text.innerText = "Veuillez remplir tous les champs!";
         popup.style.display = 'block';
+        return;
     }
     if(current_pass.value != verify_pass.value) {
         m.style.display = 'block';
+        return;
     }
     signup(formData);
 });
@@ -22,6 +24,7 @@ s.addEventListener('click' , e => {
 current_pass.addEventListener('input', () => {
     if(current_pass.value != verify_pass.value) {
         m.style.display = 'block';
+        return;
     } else {
         m.style.display = 'none';
     }
@@ -29,12 +32,14 @@ current_pass.addEventListener('input', () => {
 verify_pass.addEventListener('input', () => {
     if(current_pass.value != verify_pass.value) {
         m.style.display = 'block';
+        return;
     } else {
         m.style.display = 'none';
     }
 });
 
 const signup = async(formData) => {
+    document.querySelector('.loader-container').style.display = 'block';
     fetch('/inscription', {
         method: 'POST',
         headers: {
@@ -48,6 +53,7 @@ const signup = async(formData) => {
     .then(
         data => {
             // console.log(data);
+            document.querySelector('.loader-container').style.display = 'none';
             if(data.status_code === 201) {
                 p_text.innerText = data.status+' Rember this login: '+data.login;
                 popup.style.display = 'block';

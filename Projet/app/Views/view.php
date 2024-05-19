@@ -19,24 +19,35 @@
     <link rel="stylesheet" href="./side_bar.css">
 </head>
 <body>
+    <nav class="barre_nav">
+        <form action="/Auth">
+            <input type="date" name="date" id="" <?php if(isset($date)) echo "value=\"".$date."\"" ?> >
+            <input type="text" placeholder="Hostname" name="hostname" <?php if(isset($hostname)) echo "value=\"".$hostname."\"" ?>>
+            <select name="type" id="" >
+                <option value="">Type</option>
+                <option value="opened" <?php if(isset($type) && $type == "opened") echo "selected" ?>>Opened</option>
+                <option value="closed" <?php if(isset($type) && $type == "closed") echo "selected" ?>>Closed</option>
+            </select>
+            <!-- <input type="checkbox" name="opened" id=""><label>Opened</label>
+            <input type="checkbox" name="closed" id=""><label>Closed</label> -->
+            <input type="text" placeholder="Process" name="process" <?php if(isset($process)) echo "value=\"".$process."\"" ?>>                <input type="text" placeholder="User" name="user" <?php if(isset($user)) echo "value=\"".$user."\"" ?>>
+            <button type="submit">Search</button>
+            <a href="Auth/actualize?date=<?= $date;?>&hostname=<?= $hostname;?>&type=<?= $type;?>&process=<?= $process;?>&user=<?= $user;?>&page=<?= $page;?>" class="actu"><button type="button">Actualize</button></a>
+        </form>
+    </nav>
+    <div class="side_bar">
+            <div class="button_nav">
+                <img src="./bars.png" alt="Bars" id="image">
+            </div>
+            <div class="list">
+		<a href="Auth/export/3?date=<?= $date;?>&hostname=<?= $hostname;?>&type=<?= $type;?>&process=<?= $process;?>&user=<?= $user;?>&page=<?= $page;?>" class="link link_pdf" target="_blank"><img class="pdf" src="file-pdf.png" alt="PDF"> Export All to PDF</a> 
+                <a href="Auth/export/0?date=<?= $date;?>&hostname=<?= $hostname;?>&type=<?= $type;?>&process=<?= $process;?>&user=<?= $user;?>&page=<?= $page;?>" class="link link_pdf" target="_blank"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
+                <a href="Auth" class="actived link">View session</a>
+                <a href="/Dashboard" class="link">Dashboard</a>
+                <a href='/deconnexion' class="link">Log out</a>
+            </div>
+        </div>
     <section class="center">
-        <nav class="barre_nav">
-            <form action="/Auth">
-                <input type="date" name="date" id="" <?php if(isset($date)) echo "value=\"".$date."\"" ?> >
-                <input type="text" placeholder="Hostname" name="hostname" <?php if(isset($hostname)) echo "value=\"".$hostname."\"" ?>>
-                <select name="type" id="" >
-                    <option value="">Type</option>
-                    <option value="opened" <?php if(isset($type) && $type == "opened") echo "selected" ?>>Opened</option>
-                    <option value="closed" <?php if(isset($type) && $type == "closed") echo "selected" ?>>Closed</option>
-                </select>
-                <!-- <input type="checkbox" name="opened" id=""><label>Opened</label>
-                <input type="checkbox" name="closed" id=""><label>Closed</label> -->
-                <input type="text" placeholder="Process" name="process" <?php if(isset($process)) echo "value=\"".$process."\"" ?>>                <input type="text" placeholder="User" name="user" <?php if(isset($user)) echo "value=\"".$user."\"" ?>>
-                <button type="submit">Search</button>
-                <a href="Auth/actualize?date=<?= $date;?>&hostname=<?= $hostname;?>&type=<?= $type;?>&process=<?= $process;?>&user=<?= $user;?>&page=<?= $page;?>" class="actu"><button type="button">Actualize</button></a>
-            </form>
-        </nav>
-        
         <h1 class="title">Auth.log file</h1>
             <?php if(isset($session) && is_array($session)): ?>
                 <table>
@@ -60,21 +71,11 @@
                     <?php endforeach ?>
                     
                 </table>
-                <?= $pager->links() ?>
+                <?php if ($cond == 0) echo $pager->links(); ?>
             <?php endif ?>
     </section>
     
-    <div class="side_bar">
-        <div class="button_nav">
-            <img src="./bars.png" alt="Bars" id="image">
-        </div>
-        <div class="list">
-            <a href="Auth/export/0?date=<?= $date;?>&hostname=<?= $hostname;?>&type=<?= $type;?>&process=<?= $process;?>&user=<?= $user;?>&page=<?= $page;?>" class="link link_pdf" target="_blank"><img class="pdf" src="file-pdf.png" alt="PDF"> Export to PDF</a>
-            <a href="Auth" class="actived link">View session</a>
-            <a href="/Dashboard" class="link">Dashboard</a>
-            <a href='/deconnexion' class="link">Log out</a>
-        </div>
-    </div>
+    
     <script >
         const barre_nav = document.querySelector(".barre_nav");
         const button_nav = document.querySelector(".button_nav");
@@ -87,26 +88,17 @@
         button_nav.addEventListener("click",()=>{
             if(list_nav.style.display === "block"){
                 center.style.width = "90%";
-                barre_nav.style.width = "90%";
-                barre_nav.style.height = "15%";
-                barre_nav.style.textAlign = "left";
                 image.setAttribute("src","./bars.png");
                 list_nav.style.display = "none";
-                side_bar.style.backgroundColor = "#fff";
+                side_bar.style.backgroundColor = "transparent";
                 side_bar.style.width = "10%";
-                title.style.marginTop = "8%";
             }
             else{
-                center.style.width = "80%";
-                barre_nav.style.width = "80%";
-                barre_nav.style.height = "18%";
-                barre_nav.style.textAlign = "center";
                 image.setAttribute("src","./chevron-down.png");
                 list_nav.style.display = "block";
                 side_bar.style.backgroundColor = "#030838";
-                side_bar.style.width = "20%";
+                side_bar.style.width = "300px";
                 button_nav.style.backgroundColor = "#fff";
-                title.style.marginTop = "12%";
             }
             // alert('click');
         });

@@ -31,7 +31,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="side_bar.css"> 
+    <link rel="stylesheet" href="side_bar.css">
     <link rel="stylesheet" href="stat.css">
     <title>My Calendar</title>
 </head>
@@ -106,6 +106,7 @@
             </tbody>
         </table>
     </section>
+
     <div class="side_bar">
         <div class="button_nav">
             <img src="./bars.png" alt="Bars" id="image">
@@ -121,30 +122,31 @@
     <script >
         const button_nav = document.querySelector(".button_nav");
         const image = document.querySelector("#image");
-        const center = document.querySelector(".container");
         const list_nav = document.querySelector(".list");
         const side_bar = document.querySelector(".side_bar");
         const title = document.querySelector(".title");
 
         button_nav.addEventListener("click",()=>{
             if(list_nav.style.display === "block"){
-                center.style.width = "90%";
                 image.setAttribute("src","./bars.png");
                 list_nav.style.display = "none";
-                side_bar.style.backgroundColor = "#ececec";
+                side_bar.style.backgroundColor = "transparent";
                 side_bar.style.width = "10%";
-                title.style.marginTop = "8%";
             }
             else{
-                center.style.width = "80%";
                 image.setAttribute("src","./chevron-down.png");
                 list_nav.style.display = "block";
                 side_bar.style.backgroundColor = "#030838";
-                side_bar.style.width = "20%";
+                side_bar.style.width = "300px";
                 button_nav.style.backgroundColor = "#fff";
-                title.style.marginTop = "12%";
             }
+            // alert('click');
         });
+
+        // window.addEventListener("scroll",()=>{
+        //     barre_nav.style.top = "-20%";
+        // });
+
     </script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\AuthLog;
-// use App\Controllers\UserController;
+use App\Controllers\UserController;
 
 class Auth extends BaseController
 {
@@ -10,7 +10,7 @@ class Auth extends BaseController
     // public function __construct() {
     //     $this->s = new \App\Controllers\UserController();
     // }
-    public function index(){
+    public function index($cond=0){
         // $this->s->accueil();
 
         ////////////// Session utilisateur /////////////////
@@ -43,7 +43,8 @@ class Auth extends BaseController
             'type' => $type,
             'user' => $user,
             // 'session' => $auth->getList()->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->groupStart()->like("nom",$user)->orLike("prenoms",$user)->groupEnd()->orderBy("date")->paginate(10),
-            'session' => $auth->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->like("COALESCE(CONCAT(personnes.nom,' ',personnes.prenoms),'unknown')",$user)->getList()->orderBy('date')->paginate(10),
+            'session' =>($cond==0) ? $auth->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->like("COALESCE(CONCAT(personnes.nom,' ',personnes.prenoms),'unknown')",$user)->getList()->orderBy('date')->paginate(9):$auth->like("date",$date)->like("hostname",$hostname)->like("process",$process)->like("type",$type)->like("COALESCE(CONCAT(personnes.nom,' ',personnes.prenoms),'unknown')",$user)->getList()->orderBy('date')->findAll(),
+	    'cond' => $cond,	
             'pager' => $auth->pager
         ];
 
@@ -199,7 +200,8 @@ class Auth extends BaseController
         $width="table{width:90%;height:auto;cellpadding : 5px;} table td{padding:2px;}";
         $css="<style>".file_get_contents("./header.css").file_get_contents("./body.css").file_get_contents("./table.css").$width."</style>";
            
-        if($cond == 0) $this->index();
+        if($cond == 0) $str = $this->index();
+	else if ($cond == 3) $str = $this->index(1);
         else if($cond == 1) $str = $this->connected(0);
         else $str = $this->connected(1);
 
@@ -214,7 +216,7 @@ class Auth extends BaseController
         // //generation du pdf
         
         shell_exec("rm output.pdf");
-        shell_exec("wkhtmltopdf http://projet.mit/tmp.html output.pdf");    
+        shell_exec("wkhtmltopdf ".base_url()."tmp.html output.pdf");    
 
         header("Content-Type: application/pdf");
         header("Content-Disposition: attachment;filename=output.pdf");
@@ -404,7 +406,7 @@ class Auth extends BaseController
         // //generation du pdf
         
         shell_exec("rm output.pdf");
-        shell_exec("wkhtmltopdf http://projet.mit/tmp.html output.pdf");    
+        shell_exec("wkhtmltopdf ".base_url()."tmp.html output.pdf");    
 
         header("Content-Type: application/pdf");
         header("Content-Disposition: attachment;filename=output.pdf");

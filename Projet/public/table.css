@@ -1,8 +1,7 @@
 .title{
     text-align: center;
-    margin: auto;
+    margin: 100px auto 0 auto;
     color: gray;
-    margin-top: 8%;
     padding: 3vw;
     transition: 0.5s;
 }
@@ -41,3 +40,16 @@ table .even{
     background-color: rgb(201, 204, 216);
 }
 
+
+
+@media (max-width : 1000px){
+    .title{
+        margin-top: 150px;
+    }
+}
+
+@media (max-width : 300px){
+    .title{
+        margin-top: 300px;
+    }
+}

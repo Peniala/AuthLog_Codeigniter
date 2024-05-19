@@ -22,11 +22,13 @@ form{
     gap: 1vw;
 }
 form input, form button{
+    width: 10vw;
     padding: 1vh 1vw;
     border-radius: 50px;
     border: 1px solid rgb(138, 138, 138);
 }
 form select{
+    width: 10vw;
     padding: 1vh 1vw;
     border-radius: 50px;
     border: 1px solid rgb(138, 138, 138);
@@ -35,19 +37,20 @@ form .actu{
     width: 15%;
     text-decoration: none;
 }
-.side_bar{
+/* .side_bar{
     width: 10%;
     position: fixed;
     right: 0;
     height: 100%;
     transition: 1s;
-}
+} */
 .container{
     margin: 5% 0;
     width:90%;
     display: flex;
     justify-content: space-evenly;
     transition: 0.5s;
+    padding: 0 20px;
 }
 .container .calendar{
     border-radius: 10px;
@@ -85,8 +88,9 @@ form .actu{
     background-color: rgb(185, 223, 255);
 }
 .container .stat{
-    width: 20vw;
-    height: 15vw;
+    min-width: 200px;
+    max-width: 300px;
+    height: 200px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 1px 1px 5px 2px grey;
@@ -96,16 +100,66 @@ form .actu{
     margin: 10px;
     text-align: center;
     color: rgb(136, 136, 136);
+    text-wrap: wrap;
 }
 .stat h2{
     margin:25px;
     color: rgb(185, 223, 255);
+    text-wrap: wrap;
 }
 .stat span{
     font-size: 40px;
     color: rgb(148, 255, 148);
 }
+
 .button_nav {
-    width: 1.5vw;
-    height: 3vh;;
+    border: 1px solid #161e69;
+    margin: 5vh auto;
+    padding: 0;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-align: center;
+}
+.button_nav img{
+    margin-top: 5px;
+    width: 65%;
+    height: 65%;
+    color: #040b47;
+    transition: 2s;
+}
+
+@media (max-width:900px){
+    .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container .calendar td{
+        width: 4vw;
+        height: 4vw;
+        font-size: 20px;
+    }
+    .container .stat{
+        width: max-content;
+        height: max-content;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 1px 1px 5px 2px grey;
+        text-overflow: clip;
+    }
+    form input, form button, form select{
+        width: 15vw;
+    }
+    .container .calendar th, .container .calendar td{
+        height: 12vw;
+    }
+}
+@media (max-width:400px){
+    form input, form button{
+        width: 20vw;
+    }
+    .container .calendar th, .container .calendar td{
+        height: 40px;
+    }
 }

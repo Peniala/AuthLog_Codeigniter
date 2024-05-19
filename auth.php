@@ -4,7 +4,7 @@
     $data=[];
     $i=0;
     
-    $flux=new mysqli("localhost","faneva","123456","project");
+    $flux=new mysqli("localhost","mit","123456","mit");
     $query="select max(date) as max from session";
 
     $lastDate=mysqli_fetch_assoc($flux->query($query))['max'];
@@ -33,14 +33,16 @@
             sscanf($line,"%[^ ] %[^ ] %[^ ] %[^ ] %[^:]: %*[^ ] session %[^ ] for user %[^\n]",$mois,$jour,$heure,$hostname,$process,$typeSession,$user);
             if(strcmp($typeSession,"opened")==0){
                 $tmp=explode(" ",$user);
-                $user=explode("(",$tmp[0]);
+                $user=explode("(",$tmp[0])[0];
             }
 
             if(strcmp($mois,"Dec")==0 && strcmp($moisDate,"Jan")==0){
                 $year--;
             }
             
-            $data[$i]=array(
+	    $data[$i]=array(
+		
+
                 'date'=>$year."-".$numMois[$mois]."-0".$jour." ".$heure,
                 'hostname'=>$hostname,
                 'process'=>$process,
@@ -51,8 +53,8 @@
             //echo $year;
             
             if($data[$i]['date'] > $lastDate && $data[$i]['user']!="root" && $data[$i]['user']!="gdm"){
-                echo $lastDate."\t";
-		echo $data[$i]['date']."\n";
+               // echo $lastDate."\t";
+		//echo $data[$i]['date']."\n";
 		        $query="insert into session (date,hostname,process,type,user) values ('".$data[$i]['date']."','".$data[$i]['hostname']."','".$data[$i]['process']."','".$data[$i]['type']."','".$data[$i]['user']."')";
                 //echo $query."\n";
                 $flux->query($query);

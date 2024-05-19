@@ -1,14 +1,14 @@
 .barre_nav{
     margin: 0;
     position: fixed;
-    height: 15%;
+    height: 80px;
     display: flex;
     background-color: #fff;
-    width: 50%;
+    width: 100%;
     transition: 0.2s;
 }
 .charts{
-    margin-top: 3%; 
+    margin-top: 20px; 
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-content: center;
@@ -24,7 +24,7 @@
     text-align: center;
 }
 .levels{
-    margin-top:5%;
+    margin-top:50px;
 }
 .bars{
     width: 80%;
@@ -33,4 +33,47 @@ h4{
     color: #888;
     text-align: center;
     margin: 1vw 1vh;
+}
+
+@media (max-width:900px){
+    form input, form select, form button{
+        display: inline-block;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        min-height: fit-content;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 20px;
+    }
+    .barre_nav{
+        min-height: 120px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+    }
+    .license, .master{
+        grid-template-columns: 1fr;
+    }
+    .charts{
+        margin-top: 140px;
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+    .pie{
+        margin: 15% auto 0 auto;
+        width: 250px;
+        height: auto;
+        text-align: center;
+    }
+    .levels{
+        margin: 25px 10%;
+    }
+}
+
+@media (max-width:500px){
+    form input, form select, form button{
+        width: 140px;
+    }
 }
